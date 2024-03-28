@@ -5,18 +5,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
 
-//  @font-face {
-//   font-family: 'Roboto Slab';
-//   src: url('../../../dist/fonts/RobotoFlex.eot'); /* IE9 Compat Modes */
-//   src: url('../../dist/fonts/RobotoFlex.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//        url('../../dist/fonts/RobotoFlex.woff2') format('woff2'), /* Super Modern Browsers */
-//        url('../../dist/fonts/RobotoFlex.woff') format('woff'), /* Pretty Modern Browsers */
-//        url('../../dist/fonts/RobotoFlex.ttf')  format('truetype'), /* Safari, Android, iOS */
-//        url('../../dist/fonts/RobotoFlex.svg#RobotoFlex') format('svg'); /* Legacy iOS */
-// }
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 :root {
   /*--bs-blue: #0d6efd;*/
   --bs-blue: #165A8B;
@@ -77,11 +68,12 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-font-robotoFlex: Roboto Flex;
+  // --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  // --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  --bs-font-raleway: "Raleway", sans-serif;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-robotoFlex);
+  --bs-body-font-family: var(--bs-font-raleway);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
