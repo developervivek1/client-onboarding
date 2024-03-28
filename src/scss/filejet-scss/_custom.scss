@@ -1187,17 +1187,17 @@ td>span.doc-name {
   white-space: nowrap;
 }
 
-.enable-tick-hover:hover {
-  @extend .icon-green-tick;
-}
+// .enable-tick-hover:hover {
+//   @extend .icon-green-tick;
+// }
 
-.icon-probhited-hover:hover {
-  @extend .icon-inactive-red;
-}
+// .icon-probhited-hover:hover {
+//   @extend .icon-inactive-red;
+// }
 
-.icon-reload-hover:hover {
-  @extend .icon-waiting-blue;
-}
+// .icon-reload-hover:hover {
+//   @extend .icon-waiting-blue;
+// }
 
 input[type="time"]:invalid:before {
   @extend .ps-3, .bg-white, .position-absolute, .start-0, .text-lighter;
