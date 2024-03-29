@@ -186,32 +186,32 @@
                             <div class="mt-4">
                                <form action="" method="post">
                                 <div class="row">
-                                    <div class="position-relative col-4">
+                                    <div class="position-relative col-md-4">
                                         <input type="text" class="form-control min-height-auto mb-0 w-100 pe-5 fs-5" placeholder="Search" id="search">
                                         <span class="icon icon-md icon-search-grey me-0 opacity-75 position-absolute top-50 end-0 bg-white translate-middle me-4"></span>
                                     </div>
-                                    <div class="d-flex col-2">
+                                    <div class="d-flex col-md-2">
                                         <div class="d-flex flex-fill">
                                             <fieldset disabled="disabled" class="d-flex flex-fill opacity-75">
                                                 <button type="button" class="btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Delete <span class="icon icon-delete-dark me-0 ms-3"></span></button>
                                             </fieldset>
                                         </div>
                                     </div>
-                                    <div class="d-flex col-2">
+                                    <div class="d-flex col-md-2">
                                         <div class="d-flex flex-fill">
                                             <fieldset disabled="disabled" class="d-flex flex-fill opacity-75">
                                                 <button type="button" class="btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Edit <span class="icon icon-edit-dark me-0 ms-3"></span></button>
                                             </fieldset>
                                         </div>
                                     </div>
-                                    <div class="d-flex col-2">
+                                    <div class="d-flex col-md-2">
                                         <div class="d-flex flex-fill">
                                             <fieldset disabled="disabled" class="d-flex flex-fill opacity-75">
                                                 <button type="button" class="btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Complete <span class="icon icon-completed-dark me-0 ms-3"></span></button>
                                             </fieldset>
                                         </div>
                                     </div>
-                                    <div class="d-flex col-2">
+                                    <div class="d-flex col-md-2">
                                         <div class="d-flex flex-fill">
                                             <fieldset class="d-flex flex-fill">
                                                 <button type="button" class="btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Add New <span class="icon icon-add-new-dark me-0 ms-3"></span></button>
@@ -224,6 +224,667 @@
                          </div>   
                         <!-- search section end -->
 
+                         <!-- cta listing tabs -->
+                         <div class="entity-card-content active">
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-sm-7 col-md-9 order-1 order-sm-0">
+                                            <div class="tab-listing tab-listing-list list-view-juri active">
+                                                <ul class="nav nav-tabs">
+                                                    <li
+                                                        class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-right-edge">
+                                                        <a href="#pending" class="nav-link px-4 px-xl-5 text-warning active opacity-100"
+                                                            data-bs-toggle="tab"><span class="icon icon-pending-review"></span>Pending Review (24)</a>
+                                                    </li>
+                                                    <li
+                                                        class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
+                                                        <a href="#in-progress" class="nav-link px-4 px-xl-5 text-danger opacity-100"
+                                                            data-bs-toggle="tab"><span class="icon icon-out-of-scope"></span>Out of Scope (24)</a>
+                                                    </li>
+                                                    <li
+                                                        class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
+                                                        <a href="#completed" class="nav-link px-4 px-xl-5 text-success opacity-100"
+                                                            data-bs-toggle="tab"><span class="icon icon-completed-success"></span>Completed (24)</a>
+                                                    </li>
+                                                    
+                                                   
+                                                </ul>
+                                            </div>
+                                           
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12 tab-content-wrapper mb-3" id="list-view-juri"
+                                    style="display: block;">
+                                    <div class="tab-content bg-white rounded-2 shadow">
+                                        <!-- Pending tab -->
+                                        <div class="tab-pane fade show active" id="pending">
+                                            <div class="">
+                                                <table id="entity-listing"
+                                                    class="table table-nowrap data-table-listing table-striped w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="fixed-max-width text-capitalize">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </th>
+                                                            <th class="fixed-max-width">Audit</th>
+                                                            <th class="fixed-max-width">Type</th>
+                                                            <th>State</th>
+                                                            <th>State Id No.</th>
+                                                            <th class="formation-date-min-width">Formation Date</th>
+                                                            <th>Last Rep. Filed</th>
+                                                            <th>Status</th>
+                                                            <th>Services</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                               <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                               <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td><span class="cursor-pointer " data-toggle="tooltip"
+                                                                    data-bs-original-title="India">IND</span></td>
+                                                            <td>4231324241</td>
+                                                            <td>10/13/2023</td>
+                                                            <td>
+                                                                10/13/2023
+                                                            </td>
+                                                            <td>Active</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td><span class="cursor-pointer " data-toggle="tooltip"
+                                                                    data-bs-original-title="India">IND</span></td>
+                                                            <td>4231324241</td>
+                                                            <td>10/13/2023</td>
+                                                            <td>
+                                                                10/13/2023
+                                                            </td>
+                                                            <td>Active</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">Pending Review</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span><span class="cursor-pointer text-warning" data-toggle="tooltip"
+                                                                    data-bs-original-title="California">CA</span>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
+                                                            <td><span class="text-danger">Formation Date*</span></td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="icon icon-pending-review"></span>
+                                                                    <span class="text-warning">02/19/2024</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>Inactive</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- Pending tab end-->
+                                        <!-- In-progress tab -->
+                                        <div class="tab-pane fade show" id="in-progress">
+                                            <div class="">
+                                                <table id="entity-listing2"
+                                                    class="table table-nowrap data-table-listing table-nowrap table-striped w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="fixed-max-width">Entity Name</th>
+                                                            <th class="fixed-max-width">Audit</th>
+                                                            <th class="fixed-max-width">Type</th>
+                                                            <th>State</th>
+                                                            <th>State Id No.</th>
+                                                            <th class="formation-date-min-width">Formation Date</th>
+                                                            <th>Last Rep. Filed</th>
+                                                            <th>Status</th>
+                                                            <th>Services</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="icon icon-out-of-scope"></span>
+                                                                    <span class="text-danger">Not In Scope</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td><span class="cursor-pointer " data-toggle="tooltip"
+                                                                    data-bs-original-title="India">IND</span></td>
+                                                            <td>4231324241</td>
+                                                            <td>10/13/2023</td>
+                                                            <td>
+                                                                10/13/2023
+                                                            </td>
+                                                            <td>Active</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- In-progress tab end-->
+                                        <!-- Completed tab -->
+                                        <div class="tab-pane fade show" id="completed">
+                                            <div class="">
+                                                <table id="entity-listing3"
+                                                    class="table table-nowrap data-table-listing table-nowrap table-striped w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="fixed-max-width">Entity Name</th>
+                                                            <th class="fixed-max-width">Audit</th>
+                                                            <th class="fixed-max-width">Type</th>
+                                                            <th>State</th>
+                                                            <th>State Id No.</th>
+                                                            <th class="formation-date-min-width">Formation Date</th>
+                                                            <th>Last Rep. Filed</th>
+                                                            <th>Status</th>
+                                                            <th>Services</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr class="odd">
+                                                            <td class="sorting_1">
+                                                                <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
+                                                                <span>Entity Name 1</span> 
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="icon icon-out-of-scope"></span>
+                                                                    <span class="text-danger">Not In Scope</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>INC</td>
+                                                            <td><span class="cursor-pointer " data-toggle="tooltip"
+                                                                    data-bs-original-title="India">IND</span></td>
+                                                            <td>4231324241</td>
+                                                            <td>10/13/2023</td>
+                                                            <td>
+                                                                10/13/2023
+                                                            </td>
+                                                            <td>Active</td>
+                                                            <td>1 In Scope</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- Completed tab end-->
+                                       
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                        <!-- listing end -->
                         
 
                     </div>
@@ -2333,6 +2994,7 @@
     <!-- Service Modal Ends -->
     <script src="dist/js/plugins.min.js"></script>
     <script src="dist/js/custom.min.js"></script>
+    
     <!-- Scripts End-->
 </body>
 

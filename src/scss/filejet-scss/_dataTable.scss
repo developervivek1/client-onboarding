@@ -63,7 +63,7 @@
         thead {
             th.sorting {
                 position: relative;
-                @extend .bg-transparent, .text-uppercase;
+                @extend .bg-transparent, .text-capitalize;
 
                 &::after {
                     content: '';
