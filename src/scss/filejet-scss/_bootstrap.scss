@@ -2360,8 +2360,8 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  // border: 1px solid rgba(0, 0, 0, 0.25);
-  border: 2px solid var(--bs-black-primary);
+  border: 1.2px solid rgba(0, 0, 0, 0.50);
+  // border: 2px solid var(--bs-black-primary);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2391,8 +2391,8 @@ textarea.form-control-lg {
   border-color: var(--bs-purple);
 }
 .form-check-input[type=checkbox]:checked {
-  border-color: var(--bs-purple);
-  background: var(--bs-purple);
+  border-color: var(--bs-black);
+  background: var(--bs-black);
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -3840,7 +3840,7 @@ textarea.form-control-lg {
   border: var(--bs-nav-tabs-border-width) solid transparent;
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
-  @extend .text-uppercase;
+  // @extend .text-uppercase;
   font-weight: 600;
   padding: rem(17) rem(50);
 }
