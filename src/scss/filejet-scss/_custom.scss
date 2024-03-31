@@ -1318,3 +1318,8 @@ input[type="radio"] {
     padding-bottom: 3rem !important;
   }
 }
+
+.disabled{
+  opacity: 50%;
+  pointer-events: none;
+}
