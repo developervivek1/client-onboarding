@@ -177,3 +177,29 @@
 .card-view-height {
     min-height: 55vh;
 }
+
+.js-example-basic-single.entity-select + .select2.select2-container{
+        min-width: 100px !important;
+        // &:focus-visible{
+        //     outline: 0;
+        //     border: 0;
+        // }
+        .selection{
+            .select2-selection--single{
+                @extend .border-0;
+                background-color: transparent;
+                .select2-selection__rendered{
+                    @extend .ps-0;
+                }
+                .select2-selection__arrow{
+                    @extend .d-none;
+                }
+            }
+        }
+        
+}
+.select2-container--open{
+    .select2-dropdown{
+        @extend .border-0,.shadow;
+    }
+}
