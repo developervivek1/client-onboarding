@@ -204,7 +204,7 @@
                                     <div class="d-flex col-md-2">
                                         <div class="d-flex flex-fill">
                                             <fieldset enabled="enabled" class="d-flex flex-fill">
-                                                <button type="button" class="btn btn-light disabled border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Edit <span class="icon icon-edit-dark me-0 ms-3"></span></button>
+                                                <button type="button" class="btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Edit <span class="icon icon-edit-dark me-0 ms-3"></span></button>
                                             </fieldset>
                                         </div>
                                     </div>
@@ -2485,26 +2485,39 @@
             <div class="modal-body">
                 <form action="">
                     <div class="mb-3">
-                        <fieldset disabled>
-                            <label for="" class="form-label">Name of Entity</label>
-                            <input type="text" class="form-control" id=""
+                        
+                            
+                            <div>
+                                <label for="" class="form-label font-weight-700 text-warning">Name of Entity</label>
+                                <div class="float-end">
+                                    <span class="icon icon-pending-review col-1"></span>
+                                    <span class="text-warning" contenteditable="true">Pending Review</span>
+                                </div>
+                                <input type="text" class="form-control" id=""
                                 value="Bluebird Business Strategies" />
-                        </fieldset>
+                            </div>
+                            
+                        
                     </div>
                     <div class="mb-3">
-                        <fieldset disabled>
-                            <label for="" class="form-label">Entity State</label>
+                        <div>
+                            <label for="" class="form-label font-weight-700 text-warning">Entity State</label>
+                            <div class="float-end">
+                                <span class="icon icon-pending-review col-1"></span>
+                                <span class="text-warning" contenteditable="true">Pending Review</span>
+                            </div>
                             <input type="text" class="form-control" id="" value="Delaware" />
-                        </fieldset>
+                        </div>
+                        
                     </div>
                     
                     <div class="row">
                         <div class="col-md">
                             <div class="mb-3">
-                                <fieldset disabled>
+                                
                                     <label for="" class="form-label">Type</label>
-                                    <input type="text" class="form-control" id="" value="Profit Corporation" />
-                                </fieldset>
+                                    <input type="text" class="form-control" id="" value="LLC"/>
+                               
                             </div>
                         </div>
                         <div class="col-md">
