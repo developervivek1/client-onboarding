@@ -21,21 +21,21 @@
     <div class="grey-bg dashboard-page min-vh-100">
         <div class="container-fluid p-0">
             <div class="sidebar-wrapper">
-                <div class="sidebar min-vh-100 py-3 ps-3 d-flex flex-wrap align-content-between">
+                <div class="sidebar min-vh-100 py-3 ps-3">
                     <div>
                         <div class="ps-3 pb-4">
                             <a href="/" class="logo">
-                                <img src="dist/images/icons/filejet-logo-black.png" class="d-lg-block" alt="FileJet">
+                                <img src="dist/images/logo.png" class="d-lg-block" alt="FileJet">
                             </a>
                         </div>
                         <div>
-                            <ul class="menu-link menu-onboarding p-0 m-0">
+                            <ul class="menu-link menu-onboardin p-0 m-0">
                                 <!-- Dashboard -->
                                 <li class="nav-link active">
-                                    <a href="./entities.html" class="text-decoration-none ps-3 py-3 d-block border-0 bg-white shadow-none">
+                                    <a href="./entities.html" class="text-decoration-none ps-3 py-3 d-block">
                                         <span>
                                             <span class="icon icon-entities-dark normal-icon"></span>
-                                            <span class="icon icon-entities-dark active-icon"></span>
+                                            <span class="icon icon-entities-purple active-icon"></span>
                                         </span>
     
                                         <span class="text nav-text">Entities</span>
@@ -46,7 +46,7 @@
                                     <a href="./groups.html" class="text-decoration-none ps-3 py-3 d-block">
                                         <span>
                                             <span class="icon icon-groups-dark normal-icon"></span>
-                                            <span class="icon icon-groups-dark active-icon"></span>
+                                            <span class="icon icon-groups-purple active-icon"></span>
                                         </span>
                                         <span class="text nav-text position-relative">
                                             Groups
@@ -59,7 +59,7 @@
                                     <a href="./users.html" class="text-decoration-none ps-3 py-3 d-block">
                                         <span>
                                             <span class="icon icon-users-dark normal-icon"></span>
-                                            <span class="icon icon-users-dark active-icon"></span>
+                                            <span class="icon icon-users-purple active-icon"></span>
                                         </span>
                                         <span class="text nav-text">Users</span>
                                     </a>
@@ -68,9 +68,9 @@
                                     <a href="./payment-methode.html" class="text-decoration-none ps-3 py-3 d-block">
                                         <span>
                                             <span class="icon icon-payment-method-dark normal-icon"></span>
-                                            <span class="icon icon-payment-method-dark active-icon"></span>
+                                            <span class="icon icon-payment-method-purple active-icon"></span>
                                         </span>
-                                        <span class="text nav-text">Payment Methode</span>
+                                        <span class="text nav-text">Payment Method</span>
                                     </a>
                                 </li>
                               
@@ -79,9 +79,9 @@
                            
                         </div>
                     </div>
-                    <div class="pe-4 me-2 ps-3 flex-fill">
+                    <!-- <div class="pe-4 me-2 ps-3 flex-fill">
                         <button type="button" class="btn btn-light border-dark px-3 text-capitalize w-100 ">Contact Rep</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="main-content-wrapper">
@@ -92,7 +92,7 @@
                             <div class="col-3 col-xl-3 col-lg-3 py-3">
                                 <h3 class="m-0 font-weight-700">
                                     
-                                        Audit Overview
+                                    Onboarding Entities
                                     
                                 </h3>
                             </div>
@@ -109,19 +109,22 @@
                                     <div class="card-body">
                                         <a href="/entities.html"
                                             class="d-flex flex-column h-100 justify-content-between">
-                                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="icon icon-pending-review"></span>
-                                                    <h4 class="text-warning fs-5 font-weight-500 mb-0 text-yellow">Pending Review</h4>
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="icon icon-pending-review"></span>
+                                                        <h4 class="text-warning fs-5 font-weight-500 mb-0 text-yellow">Pending Review</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span class="icon icon-sm icon-pending-review-aero"></span>
+                                                    </div>
                                                 </div>
                                                 <div>
-                                                    <span class="icon icon-sm icon-pending-review-aero"></span>
+                                                    <p>Please verify the following information is accurate and
+                                                        complete</p>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p>Text for the pending review status</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-end pt-4 mt-2 pb-2">
+                                            <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
                                                 <div class="text-warning text-xl">24</div>
                                                 <span class="icon icon-lg icon-arrow-right-white"></span>
                                             </div>
@@ -134,19 +137,22 @@
                                     <div class="card-body">
                                         <a href="/entities.html"
                                             class="d-flex flex-column h-100 justify-content-between">
-                                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="icon icon-out-of-scope"></span>
-                                                    <h4 class="text-warning fs-5 font-weight-500 mb-0 text-danger">Out Of Scope</h4>
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="icon icon-out-of-scope"></span>
+                                                        <h4 class="text-warning fs-5 font-weight-500 mb-0 text-danger">Out Of Scope</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span class="icon icon-sm icon-out-of-scope-aero"></span>
+                                                    </div>
                                                 </div>
                                                 <div>
-                                                    <span class="icon icon-sm icon-out-of-scope-aero"></span>
+                                                    <p>The following items require additional information to be entered
+                                                        before they can be added to Filejet</p>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p>Text for the Out Of Scope status</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-end pt-4 mt-2 pb-2">
+                                            <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
                                                 <div class="text-danger text-xl">24</div>
                                                 <span class="icon icon-lg icon-arrow-right-white"></span>
                                             </div>
@@ -159,19 +165,21 @@
                                     <div class="card-body">
                                         <a href="/entities.html"
                                             class="d-flex flex-column h-100 justify-content-between">
-                                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="icon icon-completed-success"></span>
-                                                    <h4 class="text-success fs-5 font-weight-500 mb-0">Completed</h4>
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="icon icon-completed-success"></span>
+                                                        <h4 class="text-success fs-5 font-weight-500 mb-0">Completed</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span class="icon icon-sm icon-completed-aero"></span>
+                                                    </div>
                                                 </div>
                                                 <div>
-                                                    <span class="icon icon-sm icon-completed-aero"></span>
+                                                    <p>The following items have been verified</p>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p>Text for the Completed status</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-end pt-4 mt-2 pb-2">
+                                            <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
                                                 <div class="text-success text-xl">24</div>
                                                 <div>
                                                     <button type="button" class="btn btn-secondary px-4 text-capitalize">Finalize<span class="icon icon-finalize-dark ms-3"></span></button>
@@ -272,7 +280,7 @@
                                                             <th class="fixed-max-width text-capitalize">
                                                                
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span>Entity Name 1</span>
+                                                                    <span>Entity Name</span>
                                                                
                                                             </th>
                                                             <th class="fixed-max-width">Audit</th>
@@ -291,7 +299,8 @@
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span> 
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a> 
                                                                 </div>
                                                             </td>
                                                             <td>
@@ -347,13 +356,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -409,13 +423,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -452,13 +471,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -495,13 +519,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -538,13 +567,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -581,13 +615,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -624,13 +663,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -667,13 +711,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -710,13 +759,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -753,13 +807,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -796,13 +855,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -839,13 +903,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -882,13 +951,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -925,13 +999,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -968,13 +1047,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1011,13 +1095,18 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 1</span>
+                                                                    <!-- <span contenteditable="true">Entity Name 1</span> -->
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1054,7 +1143,11 @@
                                                                 </div>
                                                             </td>
                                                             <td>Inactive</td>
-                                                            <td>1 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -1445,7 +1538,8 @@
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1501,13 +1595,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1563,13 +1662,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1625,13 +1729,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1687,13 +1796,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1749,13 +1863,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1811,13 +1930,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1873,13 +1997,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1935,13 +2064,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -1997,13 +2131,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2059,13 +2198,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2121,13 +2265,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2183,13 +2332,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2245,13 +2399,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2307,12 +2466,17 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr><tr class="odd">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2368,13 +2532,18 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr class="even">
                                                             <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span>
-                                                                    <span contenteditable="true">Entity Name 3</span>
+                                                                    
+                                                                    <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
                                                             <td>
@@ -2430,7 +2599,11 @@
                                                                 </div> 
                                                             </td>
                                                             <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">2 In Scope</td>
+                                                            <td contenteditable="true">
+                                                                <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
+                                                                    RA/AR/CTA
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         
                                                     </tbody>
@@ -2514,10 +2687,8 @@
                     <div class="row">
                         <div class="col-md">
                             <div class="mb-3">
-                                
                                     <label for="" class="form-label">Type</label>
                                     <input type="text" class="form-control" id="" value="LLC"/>
-                               
                             </div>
                         </div>
                         <div class="col-md">
