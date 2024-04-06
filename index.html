@@ -92,7 +92,7 @@
                             <div class="col-3 col-xl-3 col-lg-3 py-3">
                                 <h3 class="m-0 font-weight-700">
                                     
-                                    Onboarding Entities
+                                    Onboarding - Entities
                                     
                                 </h3>
                             </div>
@@ -140,11 +140,11 @@
                                             <div>
                                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                                     <div class="d-flex align-items-center">
-                                                        <span class="icon icon-out-of-scope-dark"></span>
-                                                        <h4 class="fs-5 font-weight-500 mb-0 text-dark">Out Of Scope</h4>
+                                                        <span class="icon icon-out-of-scope-dark opacity-50"></span>
+                                                        <h4 class="fs-5 font-weight-500 mb-0 text-secondary">Out Of Scope</h4>
                                                     </div>
                                                     <div>
-                                                        <span class="icon icon-sm icon-out-of-scope-aero-dark"></span>
+                                                        <span class="icon icon-sm icon-out-of-scope-aero-dark opacity-50"></span>
                                                     </div>
                                                 </div>
                                                 <div>
@@ -153,7 +153,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
-                                                <div class="text-dark text-xl">24</div>
+                                                <div class="text-secondary text-xl">24</div>
                                                 <span class="icon icon-lg icon-arrow-right-white"></span>
                                             </div>
                                         </a>
@@ -283,7 +283,7 @@
                                                                     <span>Entity Name</span>
                                                                
                                                             </th>
-                                                            <th class="fixed-max-width">Audit</th>
+                                                            
                                                             <th class="fixed-max-width">Type</th>
                                                             <th>State</th>
                                                             <th>State Id No.</th>
@@ -303,12 +303,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a> 
                                                                 </div>
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
 
                                                             <td>
                                                                 <div>
@@ -335,16 +330,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -356,8 +342,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     CTA
                                                                 </button>
@@ -371,12 +365,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -402,16 +391,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -423,8 +403,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     CTA
                                                                 </button>
@@ -438,12 +426,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -463,7 +446,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -471,8 +454,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -486,12 +477,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -511,7 +497,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -519,8 +505,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -534,12 +528,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -559,7 +548,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -567,8 +556,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -582,12 +579,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -607,7 +599,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -615,8 +607,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -630,12 +630,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -655,7 +650,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -663,8 +658,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -678,12 +681,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -703,7 +701,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -711,8 +709,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -726,12 +732,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -751,7 +752,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -759,8 +760,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -774,12 +783,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -799,7 +803,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -807,8 +811,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -822,12 +834,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -847,7 +854,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -855,8 +862,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -870,12 +885,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -895,7 +905,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -903,8 +913,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -918,12 +936,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -943,7 +956,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -951,8 +964,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -966,12 +987,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -991,7 +1007,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -999,8 +1015,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1014,12 +1038,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1039,7 +1058,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -1047,8 +1066,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1062,12 +1089,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1087,7 +1109,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -1095,8 +1117,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1110,12 +1140,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex align-items-center">
-                                                                    <span class="icon icon-pending-review col-1"></span>
-                                                                    <span class="text-warning">Pending Review</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1135,7 +1160,7 @@
                                                                 </div contenteditable="true">
                                                                 
                                                             </td>
-                                                            <td><span class="text-danger" contenteditable="true">State ID No.*</span></td>
+                                                            <td><span class="text-danger">State ID No.*</span></td>
                                                             <td><span class="text-danger" contenteditable="true">Formation Date*</span></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -1143,8 +1168,16 @@
                                                                     <span class="text-warning">02/19/2024</span>
                                                                 </div>
                                                             </td>
-                                                            <td contenteditable="true">Inactive</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1163,7 +1196,7 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="fixed-max-width"><span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span><span>Entity Name</span></th>
-                                                            <th class="fixed-max-width">Audit</th>
+                                                            
                                                             <th class="fixed-max-width">Type</th>
                                                             <th>State</th>
                                                             <th>State Id No.</th>
@@ -1181,12 +1214,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1195,7 +1223,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
@@ -1209,12 +1245,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1223,7 +1254,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1237,12 +1276,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1251,7 +1285,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1265,12 +1307,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1279,7 +1316,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1293,12 +1338,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1307,7 +1347,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1321,12 +1369,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1335,7 +1378,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1349,12 +1400,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1363,7 +1409,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1377,12 +1431,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1391,7 +1440,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1405,12 +1462,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1419,7 +1471,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1433,12 +1493,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1447,7 +1502,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1461,12 +1524,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1475,7 +1533,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1489,12 +1555,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1503,7 +1564,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1517,12 +1586,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1531,7 +1595,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1545,12 +1617,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 1</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-out-of-scope-danger"></span>
-                                                                    <span class="text-danger">Not In Scope</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td class="disabled">INC</td>
                                                             <td class="disabled"><span class="cursor-pointer " data-toggle="tooltip"
                                                                     data-bs-original-title="India">IND</span></td>
@@ -1559,7 +1626,15 @@
                                                             <td class="disabled">
                                                                 10/13/2023
                                                             </td>
-                                                            <td class="disabled">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td class="disabled">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1579,7 +1654,7 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="fixed-max-width"><span><input class="form-check-input me-3" type="checkbox" name="" id="1"></span><span>Entity Name</span></th>
-                                                            <th class="fixed-max-width">Audit</th>
+                                                            
                                                             <th class="fixed-max-width">Type</th>
                                                             <th>State</th>
                                                             <th>State Id No.</th>
@@ -1599,12 +1674,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1630,16 +1700,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1651,7 +1712,15 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
                                                             <td contenteditable="true">
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA
@@ -1666,12 +1735,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1697,16 +1761,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1718,8 +1773,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR
                                                                 </button>
@@ -1733,12 +1796,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1764,16 +1822,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1785,8 +1834,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1800,12 +1857,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1831,16 +1883,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1852,8 +1895,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1867,12 +1918,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1898,16 +1944,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1919,8 +1956,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -1934,12 +1979,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -1965,16 +2005,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -1986,8 +2017,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2001,12 +2040,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2032,16 +2066,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2053,8 +2078,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2068,12 +2101,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2099,16 +2127,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2120,8 +2139,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2135,12 +2162,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2166,16 +2188,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2187,8 +2200,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2202,12 +2223,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2233,16 +2249,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2254,8 +2261,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2269,12 +2284,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2300,16 +2310,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2321,8 +2322,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2336,12 +2345,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2367,16 +2371,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2388,8 +2383,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2403,12 +2406,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2434,16 +2432,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2455,8 +2444,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2470,12 +2467,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2501,16 +2493,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2522,8 +2505,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2536,12 +2527,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2567,16 +2553,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2588,8 +2565,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2603,12 +2588,7 @@
                                                                     <a href="javascript:void()" contenteditable="true" class="cursor-pointer" role="button" data-bs-toggle="modal" data-bs-target="#updateEntityDetails">Entity Name 3</a>
                                                                 </div> 
                                                             </td>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <span class="icon icon-completed-success"></span>
-                                                                    <span class="text-success">Completed</span>
-                                                                </div>
-                                                            </td>
+                                                            
                                                             <td>
     <div>
                                                                     <select class="js-example-basic-single entity-select" name="state">
@@ -2634,16 +2614,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <div>
-                                                                    <select class="js-example-basic-single entity-select" name="state">
-                                                                        <option value="4231324241">4231324241</option>
-                                                                        <option value="4231324242">4231324242</option>
-                                                                        <option value="4231324243">4231324243</option>
-                                                                        <option value="4231324244">4231324244</option>
-                                                                        <option value="4231324245">4231324245</option>
-                                                                        <option value="4231324246">4231324246</option>
-                                                                    </select>
-                                                                </div>
+                                                                4231324241
                                                             </td>
                                                             <td style="max-width: 130px !important;">
                                                                 <div class="calender-parent position-relative">
@@ -2655,8 +2626,16 @@
                                                                     <input type="text" class="bg-transparent outline-0 border-0 fs-6 font-weight-500" id="formateDateCompleted" value="10/13/2023">
                                                                 </div> 
                                                             </td>
-                                                            <td contenteditable="true">Active</td>
-                                                            <td contenteditable="true">
+                                                            <td>
+                                                                <div>
+                                                                    <select class="js-example-basic-single entity-select" name="state">
+                                                                        <option value="active">Active</option>
+                                                                        <option value="inactive">Inactive</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
                                                                 <button type="button" class="w-100 btn fs-6 border rounded-2 px-3 py-2">
                                                                     RA/AR/CTA
                                                                 </button>
@@ -2959,15 +2938,15 @@
                     <button type="button"
                         class="btn btn-link text-uppercase text-decoration-none font-weight-600"
                         data-bs-dismiss="modal">
-                        Cancel
+                       <span class="icon icon-angle-left icon-sm"></span> Cancel
                     </button>
-                    <button type="button" class="btn btn-tertiary text-uppercase py-3 px-3 rounded-3 ms-3"
+                    <button type="button" class="btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 ms-3"
                         data-bs-dismiss="modal">
-                        Preview
+                        SAVE and EXit
                     </button>
-                    <button type="button" class="btn btn-info text-uppercase py-3 px-3 rounded-3 ms-3"
+                    <button type="button" class="btn btn-dark text-uppercase py-3 px-4 disabled rounded-3 ms-3"
                         data-bs-dismiss="modal">
-                        Save and exit
+                        Complete <span class="icon icon-check-circle-white"></span>
                     </button>
                 </div>
             </div>
