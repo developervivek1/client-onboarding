@@ -58,7 +58,7 @@
   background-image: url("../../../dist/images/icons/delete-dark.svg");
 
   &:hover {
-    background-image: url("../../../dist/images/icons/delete-red.svg");
+    background-image: url("../../../dist/images/icons/delete-dark.svg");
   }
 }
 .icon-delete-danger{
@@ -73,7 +73,7 @@
   background-image: url("../../../dist/images/icons/edit-dark.svg");
 
   &:hover {
-    background-image: url("../../../dist/images/icons/edit-purple.svg");
+    background-image: url("../../../dist/images/icons/edit-dark.svg");
   }
 }
 
@@ -164,4 +164,7 @@
 }
 .icon-down-filter-arrow{
   background-image: url('../../../dist/images/icons/down-filter-arrow.svg');
+}
+.icon-folder-white{
+  background-image: url('../../../dist/images/icons/icon-folder-white.svg');
 }
