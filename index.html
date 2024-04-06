@@ -244,17 +244,17 @@
                                                 <ul class="nav nav-tabs">
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-right-edge">
-                                                        <a href="#pending-review" class="nav-link px-4 px-xl-5 text-warning active opacity-100"
+                                                        <a href="#pending-review" class="nav-link px-4 px-xl-5 text-warning active opacity-100 d-flex align-items-center"
                                                             data-bs-toggle="tab"><span class="icon icon-pending-review"></span>Pending Review (24)</a>
                                                     </li>
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
-                                                        <a href="#in-progress" class="nav-link px-4 px-xl-5 text-danger opacity-100"
+                                                        <a href="#in-progress" class="nav-link px-4 px-xl-5 text-danger opacity-100 d-flex align-items-center"
                                                             data-bs-toggle="tab"><span class="icon icon-out-of-scope-danger"></span>Out of Scope (24)</a>
                                                     </li>
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
-                                                        <a href="#completed" class="nav-link px-4 px-xl-5 text-success opacity-100"
+                                                        <a href="#completed" class="nav-link px-4 px-xl-5 text-success opacity-100 d-flex align-items-center"
                                                             data-bs-toggle="tab"><span class="icon icon-completed-success"></span>Completed (24)</a>
                                                     </li>
                                                     
@@ -2693,9 +2693,29 @@
             <!-- Modal Body Start-->
             <div class="modal-body">
                 <form action="">
+                    <!-- bulk entity name -->
+                    <div class="mb-4 d-none">
+                        <div class="radio-group shadow-sm rounded-2 p-3 pb-0">
+                            <div class="d-flex gap-3">
+                                <p class="font-weight-600">Entity Name</p>
+                                <p class="d-none">Bluebird Business Strategies</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <p class="font-weight-600">Entity Name</p>
+                                <p class="d-none">Bluebird Business Strategies</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <p class="font-weight-600">Entity Name</p>
+                                <p class="d-none">Bluebird Business Strategies</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <p class="font-weight-600">Entity Name</p>
+                                <p class="d-none">Bluebird Business Strategies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bulk entity name end-->
                     <div class="mb-3">
-                        
-                            
                             <div>
                                 <label for="" class="form-label font-weight-700 text-warning">Name of Entity</label>
                                 <div class="float-end">
@@ -2705,8 +2725,6 @@
                                 <input type="text" class="form-control" id=""
                                 value="Bluebird Business Strategies" />
                             </div>
-                            
-                        
                     </div>
                     <div class="mb-3">
                         <div>
@@ -2816,7 +2834,7 @@
                                     id="aspOther" value="option2">
                                 <label class="text-capitalize" for="aspOther">More Than One Manager</label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inlin">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                     id="aspOther" value="option2">
                                 <label class="text-capitalize" for="aspOther">All LLC Member(s)</label>
