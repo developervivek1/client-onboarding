@@ -2721,7 +2721,7 @@
                                 <label for="" class="form-label font-weight-700 text-warning">Name of Entity</label>
                                 <div class="float-end">
                                     <span class="icon icon-pending-review col-1"></span>
-                                    <span class="text-warning" contenteditable="true">Pending Review</span>
+                                    <span class="text-warning">Pending Review</span>
                                 </div>
                                 <input type="text" class="form-control" id=""
                                 value="Bluebird Business Strategies" />
@@ -2734,7 +2734,7 @@
                             <label for="" class="form-label font-weight-700 text-warning">Entity State</label>
                             <div class="float-end">
                                 <span class="icon icon-pending-review col-1"></span>
-                                <span class="text-warning" contenteditable="true">Pending Review</span>
+                                <span class="text-warning">Pending Review</span>
                             </div>
                             <input type="text" class="form-control" id="" value="Delaware" />
                         </div>
@@ -2742,61 +2742,73 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md">
+                        <div class="col-md-12">
                             <div class="mb-3">
                                     <label for="" class="form-label">Type</label>
                                     <input type="text" class="form-control" id="" value="LLC"/>
                             </div>
                         </div>
-                        <div class="col-md">
-                            <div class="mb-3">
-                                <fieldset disabled>
-                                    <label for="" class="form-label">Sub Type</label>
-                                    <input type="text" class="form-control" id="" value="General Stock" />
-                                </fieldset>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div>
+                            <label for="" class="form-label font-weight-700 text-danger">EIN Number</label>
+                            <div class="float-end">
+                                
+                                <span class="text-danger">Required <span>*</span></span>
+                            </div>
+                            <input type="text" class="form-control" id="" value="" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>
+                            <label for="" class="form-label font-weight-700 text-danger">Formation Date</label>
+                            <div class="float-end">
+                                
+                                <span class="text-danger">Required <span>*</span></span>
+                            </div>
+                            <div class="calender-input-filed position-relative">
+                                <input type="text" class="form-control" name="formationDate" id="" placeholder="MM / DD / YYYY">
+
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <fieldset disabled>
-                            <label for="" class="form-label">Formation Date</label>
-                            <input type="text" class="form-control" id="" value="Formation Date" />
-                        </fieldset>
+                        <div>
+                            <label for="" class="form-label font-weight-700">State File Number</label>
+                           
+                            <input type="text" class="form-control" id="" value="" />
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <fieldset>
-                            <label for="" class="form-label">Store Number</label>
-                            <input type="number" class="form-control" id="" value="" maxlength="8" placeholder="Store Number" />
-                        </fieldset>
-                    </div>
+                 
                     <div class="mb-3">
                         <div class="row">
-                            <div class="col-md">
-                                <label for="" class="form-label">Business address</label>
+                            <div class="col-6">
+                                <label class="form-label">Business Address</label>
                             </div>
-                            <div class="col-md">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="mailAddress"
-                                        checked />
-                                    <label class="form-check-label form-label" for="mailAddress">
-                                        SAME AS MAILING address?
-                                    </label>
+                            <div class="col-6">
+                                <div class="form-switch text-end d-flex align-items-start justify-content-end ps-0 h-50">
+                                    <div class="form-check form-switch col-2 h-100 ps-0 justify-content-end">
+                                        <input class="form-check-input w-100 h-100" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    </div>
+                                    <label class="form-check-label" for="business_license_mailing_address_diff">Mailing
+                                        address different from business address?</label>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
                         <input type="text" class="form-control" id="" placeholder="Address Line 1" />
+
                     </div>
+                  
                     <div class="mb-3">
                         <input type="text" class="form-control" id="" placeholder="Address Line 2" />
                     </div>
                     <div class="mb-3">
                         <div class="row">
-                            <div class="col-md">
+                            <div class="col-md-4">
                                 <input type="text" class="form-control" id="" placeholder="City" />
                             </div>
-                            <div class="col-md">
+                            <div class="col-md-4">
                                 <select class="form-select form-control" aria-label="Default select example">
                                     <option selected>State</option>
                                     <option value="1">One</option>
@@ -2804,407 +2816,140 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="County" />
-                            </div>
-                            <div class="col-md">
+                            <div class="col-md-4">
                                 <input type="text" class="form-control" id="" placeholder="Zip" />
                             </div>
                         </div>
                     </div>
+                    
                     <div class="mb-3">
                         <div class="w-100">
-                            <label for="" class="form-label">Agent of Service of process</label>
+                            <label for="" class="form-label">Management- The LLC is managed by</label>
                         </div>
                         <div class="radio-group">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                     id="aspFileject" value="option1">
-                                <label class="form-check-label" for="aspFileject">Filejet</label>
+                                <label class="text-capitalize" for="aspFileject">One Manager</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                     id="aspOther" value="option2">
-                                <label class="form-check-label" for="aspOther">Other</label>
+                                <label class="text-capitalize" for="aspOther">More Than One Manager</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="aspOther" value="option2">
+                                <label class="text-capitalize" for="aspOther">All LLC Member(s)</label>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="mb-3">
-                        <select class="form-select form-control" aria-label="Default select example">
-                            <option selected>Corporate</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                        <div>
+                            <button type="button" class="btn btn-tertiary-grey me-3">Manager</button>
+                            <button type="button" class="btn btn-tertiary-grey">Member</button>
+                        </div>
+                    </div>  
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="" placeholder="Address Line 1" />
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="" placeholder="Address Line 2" />
-                    </div>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="City" />
-                            </div>
-                            <div class="col-md">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected>State</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="County" />
-                            </div>
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="Zip" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <fieldset disabled>
-                            <label for="" class="form-label">Number of shares Authorized to issue</label>
-                            <input type="text" class="form-control" id="" value="Number of shares" />
-                        </fieldset>
-                    </div>
-                    <div class="mb-4">
-                        <fieldset disabled>
-                            <label for="" class="form-label">Per Value</label>
-                            <input type="text" class="form-control" id="" value="$ per value" />
-                        </fieldset>
-                    </div>
-                    <h5 class="font-weight-700">Officers</h5>
-                    <div class="accordion mb-3" id="officers-address">
-                        <div class="accordion-item mb-3 rounded-2 overflow-hidden border-0 box-shadow">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button bg-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    <span class="avatar d-inline-block me-3"><img src="dist/images/avatar.png"
-                                            alt=""></span> <span
-                                        class="d-inline-block font-weight-600 fs-7">John
-                                        Doe</span> <span
-                                        class="d-inline-block font-weight-600 fs-7 text-lighter ms-3">President</span>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="headingOne" data-bs-parent="#officers-address">
-                                <div class="accordion-body">
-                                    <label for="" class="form-label">Address</label>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address Line 1" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address Line 2" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="City" />
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-select form-control"
-                                                    aria-label="Default select example">
-                                                    <option selected>State</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="County" />
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="Zip" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3 rounded-2 overflow-hidden border-0 box-shadow">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed bg-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="avatar d-inline-block me-3"><img src="dist/images/avatar.png"
-                                            alt=""></span> <span
-                                        class="d-inline-block font-weight-600 fs-7">Wade
-                                        Warren</span> <span
-                                        class="d-inline-block font-weight-600 fs-7 text-lighter ms-3">Director</span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingTwo" data-bs-parent="#officers-address">
-                                <div class="accordion-body">
-                                    <label for="" class="form-label">Address</label>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address Line 1" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address Line 2" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="City" />
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-select form-control"
-                                                    aria-label="Default select example">
-                                                    <option selected>State</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="County" />
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="Zip" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3 rounded-2 overflow-hidden border-0 box-shadow">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed bg-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="avatar d-inline-block me-3"><img src="dist/images/avatar.png"
-                                            alt=""></span> <span
-                                        class="d-inline-block font-weight-600 fs-7">Esther
-                                        Howard</span> <span
-                                        class="d-inline-block font-weight-600 fs-7 text-lighter ms-3">Shareholder</span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingTwo" data-bs-parent="#officers-address">
-                                <div class="accordion-body">
-                                    <label for="" class="form-label">Address</label>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address line 1" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Address line 2" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="City" />
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-select form-control"
-                                                    aria-label="Default select example">
-                                                    <option selected>State</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="County" />
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text" class="form-control" id=""
-                                                    placeholder="Zip" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-5">
-                        <button type="button"
-                            class="btn btn-tertiary text-uppercase py-3 px-3 rounded-3 font-weight-600"
-                            data-bs-dismiss="modal" data-bs-toggle="collapse" href="#addNewOfficer"
-                            role="button" aria-expanded="false" aria-controls="addNewOfficer">
-                            Add New Officer
-                        </button>
-                        <div class="collapse mt-4" id="addNewOfficer">
-                            <form action="">
-                                <div class="mb-3">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="officerType"
-                                            id="individualOfficer" value="option1">
-                                        <label class="form-check-label"
-                                            for="individualOfficer">Individual</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="officerType"
-                                            id="corporateOfficer" value="option2">
-                                        <label class="form-check-label" for="corporateOfficer">Corporate</label>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="officerFirstName" class="form-label">First name</label>
-                                    <input type="text" class="form-control" id="officerFirstName"
-                                        placeholder="First Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="officerMiddleName" class="form-label">Middle name</label>
-                                    <input type="text" class="form-control" id="officerMiddleName"
-                                        placeholder="Middle Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="officerLastName" class="form-label">Last name</label>
-                                    <input type="text" class="form-control" id="officerLastName"
-                                        placeholder="Last Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="officerEmail" class="form-label">Email</label>
-                                    <input type="text" class="form-control placeholder-lowercase"
-                                        id="officerEmail" placeholder="email@address.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Address</label>
-                                    <input type="text" class="form-control mb-3" id=""
-                                        placeholder="Address Line 1">
-                                    <input type="text" class="form-control mb-3" id=""
-                                        placeholder="Address Line 2">
-                                    <input type="text" class="form-control" id="" placeholder="City">
-                                </div>
-                                <div class="mb-3">
-                                    <div class="row">
-                                        <div class="col-md">
-                                            <input type="text" class="form-control" id="" placeholder="Zip">
-                                        </div>
-                                        <div class="col-md">
-                                            <select class="form-select form-control"
-                                                aria-label="Default select example" class="">
-                                                <option selected="">State</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="">Rights</label>
-                                    <select class="form-select form-control" aria-label="Rights">
-                                        <option selected="">Edit</option>
-                                        <option value="1">View</option>
-                                    </select>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                    <button type="button"
-                                        class="btn btn-tertiary text-uppercase text-decoration-none font-weight-600 px-4">
-                                        Cancel
-                                    </button>
-                                    <button type="button"
-                                        class="btn btn-info text-uppercase py-3 px-5 rounded-3 ms-3">
-                                        Save
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-700 mb-3">Sign</h5>
-                    <div class="mb-4">
-                        <label for="" class="form-label">Filejet will sign on your behalf</label>
-                        <input type="text" class="form-control" id="" placeholder="Authorized signer" />
-                    </div>
-                    <div class="mb-2">
-                        <div class="row">
-                            <div class="col-md">
-                                <label for="" class="form-label">Organizer address</label>
-                            </div>
-                            <div class="col-md">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                        id="businessAddress" checked="">
-                                    <label class="form-check-label form-label" for="businessAddress">
-                                        SAME AS BUSINESS address?
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="" placeholder="Address Line 1" />
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="" placeholder="Address Line 2" />
-                    </div>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="City" />
-                            </div>
-                            <div class="col-md">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected>State</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="row">
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="County" />
-                            </div>
-                            <div class="col-md">
-                                <input type="text" class="form-control" id="" placeholder="Zip" />
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="" class="form-label">Group</label>
+                        <div>
+                            <div class="bg-white rounded-2 shadow-sm">
+                                <table class="table table-striped w-100 table-nowrap dataTable no-footer">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:20%"><strong>Name</strong></td>
+                                            <td style="width:30%"><strong>Address</strong></td>
+                                            <td style="width:20%"><strong>Role</strong></td>
+                                            <td style="width:10%"><strong>Action</strong></td>
+                                        </tr>
+                                        <tr class="soi-user-listing-member">
+                                            <td>
+                                                <div>John Doe</div>
+                                            </td>
+                                            
+                                            <td>
+                                                <div>9350 East Flair Dr. El Monte, CA 91731</div>
+                                            </td>
+                                            <td>
+                                                <div>Member</div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="javascript:;" data-key="id" data-value="528" data-bs-toggle="modal" data-bs-target="#addBeneficialModal" class="user-btn ">
+                                                        <span class="icon icon-edit cursor-pointer" data-toggle="tooltip" title="EDIT"></span></a>
 
+                                                    <a href="javascript:;" data-key="id" data-value="528" data-type="member" data-mode="delete" class="delete-user-btn ">
+                                                        <span class="icon icon-delete me-3 cursor-pointer" data-toggle="tooltip" title="DELETE"></span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="soi-user-listing-member">
+                                            <td>
+                                                <div>Jim Hal</div>
+                                            </td>
+                                            
+                                            <td>
+                                                <div>#9350 Unit, A El Monte, CA 91731</div>
+                                            </td>
+                                            <td>
+                                                <div>Member</div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="javascript:;" data-key="id" data-value="528" data-bs-toggle="modal" data-bs-target="#addBeneficialModal" class="user-btn ">
+                                                        <span class="icon icon-edit cursor-pointer" data-toggle="tooltip" title="EDIT"></span></a>
+
+                                                    <a href="javascript:;" data-key="id" data-value="528" data-type="member" data-mode="delete" class="delete-user-btn ">
+                                                        <span class="icon icon-delete me-3 cursor-pointer" data-toggle="tooltip" title="DELETE"></span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="w-100">
+                            <label for="" class="form-label">In Scope Services</label>
+                        </div>
+                        <div class="bg-white p-3 rounded-2 shadow-sm">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ra" value="option1">
+                                <label class="text-capitalize" for="ra">Registered Agent (RA)</label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ar" value="option2">
+                                <label class="text-capitalize" for="ar">Annual Report Filling (AR)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="cta" value="option2">
+                                <label class="text-capitalize" for="cta">CTA</label>
+                            </div>
+                        </div>
+                    </div>  
+                   <div class="my-4">
+                        <hr>    
+                   </div>  
+                   <div class="mb-3">
+                        <h5 class="font-weight-700 mb-3">Sign</h5>
+                        <h3 class="font-weight-700 mb-1">Filejet<sup>®</sup> will sign on your behalf</h3>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, impedit maxime! Sapiente beatae quis, fuga quas sequi minima, illum ducimus est, repellat maxime ut exercitationem eligendi animi! Perspiciatis, iusto minima.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, minus molestias sed quos excepturi voluptas vitae quis nobis blanditiis assumenda dignissimos ratione sunt similique doloribus expedita, obcaecati consequuntur. Consectetur, iste!</p>
+
+                        <input type="text" class="form-control" value="dsf">
+                   </div>          
+                    <div class="mb-3">
+                        <label for="" class="form-label">Group</label>
                         <select class="form-select form-control">
                             <option selected>Groups</option>
                             <option value="1">Group Name 1</option>
                             <option value="2">Group Name 1</option>
                             <option value="3">Group Name 1</option>
                         </select>
-
                     </div>
-
                 </form>
             </div>
             <!-- Modal Body End -->
@@ -3246,6 +2991,24 @@
 
             });
             $('input[id="formateDateCompleted"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY'));
+            });
+        });
+
+        $(function () {
+            $('input[id="formationDate"]').daterangepicker({
+                singleDatePicker: true,
+                // showDropdowns: true,
+                autoUpdateInput: false,
+                autoApply: true,
+                parentEl: $('.calender-input-filed'),
+                applyButtonClasses: 'btn-info',
+                drops: 'bottom',
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+
+            });
+            $('input[id="formationDate"]').on('apply.daterangepicker', function (ev, picker) {
                 $(this).val(picker.startDate.format('MM/DD/YYYY'));
             });
         });
