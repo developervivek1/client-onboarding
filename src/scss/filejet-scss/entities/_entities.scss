@@ -189,7 +189,7 @@
                 @extend .border-0;
                 background-color: transparent;
                 .select2-selection__rendered{
-                    @extend .ps-0;
+                    @extend .ps-0,.pe-0;
                 }
                 .select2-selection__arrow{
                     @extend .d-none;
