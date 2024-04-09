@@ -204,3 +204,16 @@
         min-width: 100px !important;
     }
 }
+
+
+.jconfirm-modern {
+    .jconfirm-box-container {
+        .jconfirm-box {
+            @extend .bg-white,.border-0;
+            background: none ;
+            div{
+                @extend .text-dark;
+            }
+    }
+}
+}
