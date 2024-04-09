@@ -3764,6 +3764,7 @@
     <script>
         $('.example5-3-3').on('click', function () {
             $.confirm({
+                columnClass: 'col-md-5',
                 icon: 'icon icon-completed-green-check icon-xxl',
                 title: 'Success',
                 content: 'Entity details saved successfully.',
@@ -3786,6 +3787,7 @@
         $('.completed-entity').on('click', function () {
             $.confirm({
                 // icon: 'icon icon-completed-green-check icon-xxl',
+                columnClass: 'col-md-5',
                 title: 'Complete these Entities ?',
                 titleClass: 'fs-5 font-weight-500 opacity-75',
                 content: 'This will mark them as completed. This isn’t permanent - updating any info will revert the Entity back to Pending Review audit status.',
@@ -3804,6 +3806,7 @@
 
                         action: function () {
                             $.confirm({
+                            // columnClass: 'col-md-5',    
                             icon: 'icon icon-completed-green-check icon-xxl',
                             title: 'Success',
                             content: 'Entities Completed.',
@@ -3847,6 +3850,7 @@
         $('.deleted-entity').on('click', function () {
             $.confirm({
                 // icon: 'icon icon-completed-green-check icon-xxl',
+                columnClass: 'col-md-5',
                 title: 'Delete Entity/Entities',
                 titleClass: 'fs-5 font-weight-500 opacity-75',
                 content: 'Are You Sure You Want to Delete these Entities? ' + '<br/>' + 'This cannot be undone.',
@@ -3865,6 +3869,7 @@
 
                         action: function () {
                             $.confirm({
+                            // columnClass: 'col-md-5',    
                             icon: 'icon icon-completed-green-check icon-xxl',
                             title: 'Success',
                             content: 'Entities Deleted.',
