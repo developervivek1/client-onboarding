@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Jet: Entities</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="dist/css/filejet-style.css">
+    <script src="dist/js/jquery.min.js"></script>
+    <!-- Scripts -->
+
+    <!-- select2 library -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- select2 library -->
+</head>
+
+<body>
+
+    <div class="grey-bg dashboard-page min-vh-100">
+        <div class="container-fluid p-0">
+            <div class="sidebar-wrapper">
+                <div class="sidebar min-vh-100 py-3 ps-3">
+                    <div>
+                        <div class="ps-3 pb-4">
+                            <a href="/" class="logo">
+                                <img src="dist/images/logo.png" class="d-none d-lg-block" alt="FileJet">
+                                <img src="dist/images/filejet-pinLogo.png" class="d-block d-lg-none" alt="FileJet">
+                            </a>
+                        </div>
+                        <div>
+                            <ul class="menu-link menu-onboardin p-0 m-0">
+                                <!-- Dashboard -->
+                                <li class="nav-link active">
+                                    <a href="./index.html" class="text-decoration-none ps-3 py-3 d-block">
+                                        <span>
+                                            <span class="icon icon-entities-dark normal-icon"></span>
+                                            <span class="icon icon-entities-purple active-icon"></span>
+                                        </span>
+
+                                        <span class="text nav-text">Entities</span>
+                                    </a>
+                                </li>
+                                <!-- Entities -->
+                                <li class="nav-link">
+                                    <a href="./groups.html" class="text-decoration-none ps-3 py-3 d-block">
+                                        <span>
+                                            <span class="icon icon-groups-dark normal-icon"></span>
+                                            <span class="icon icon-groups-purple active-icon"></span>
+                                        </span>
+                                        <span class="text nav-text position-relative">
+                                            Groups
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- Groups -->
+                                <li class="nav-link">
+                                    <a href="./users.html" class="text-decoration-none ps-3 py-3 d-block">
+                                        <span>
+                                            <span class="icon icon-users-dark normal-icon"></span>
+                                            <span class="icon icon-users-purple active-icon"></span>
+                                        </span>
+                                        <span class="text nav-text">Users</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="./payment-methode.html" class="text-decoration-none ps-3 py-3 d-block">
+                                        <span>
+                                            <span class="icon icon-payment-method-dark normal-icon"></span>
+                                            <span class="icon icon-payment-method-purple active-icon"></span>
+                                        </span>
+                                        <span class="text nav-text">Payment Method</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- <div class="pe-4 me-2 ps-3 flex-fill">
+                        <button type="button" class="btn btn-light border-dark px-3 text-capitalize w-100 ">Contact Rep</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="main-content-wrapper">
+                <div class="container-fluid container-lg">
+                    <div class="header py-1">
+
+                        <div class="row align-items-center">
+                            <div class="col-8 py-3">
+                                <h3 class="m-0 font-weight-700">
+                                    Finalize Entities
+                                </h3>
+                            </div>
+                            <div class="col-4 py-3 text-end">
+                                <a href="index.html" class="text-decoration-none d-flex align-items-center justify-content-end"><span class="fs-6">Edit Entities</span> <span class="icon icon-sm me-0 ms-2 icon-out-of-scope-aero-dark opacity-50"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid container-lg">
+                    <div class="main-content">
+                       <div>
+                        <div class="bg-white rounded-2 mb-3 shadow">
+                            <table id="entity-listing" class="table data-table-listing table-striped w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="fixed-max-width">Group</th>
+                                        <th class="fixed-max-width">Entity Name</th>
+                                        <th class="fixed-max-width">State</th>
+                                        <th>Registered Agent</th>
+                                        <th>Annual Report</th>
+                                        <th>CTA</th>
+                                        <th>Payment Method</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1">Group</td>
+                                        <td><a href="/entities-details.html">Beyond
+                                            Boundaries Ventures</a></td>
+                                        <td><span class="cursor-pointer " data-toggle="tooltip"
+                                            data-bs-original-title="Wyoming">WY</span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>Visa-0224</td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                       </div>
+
+                       <div class="payment-summary mt-4">
+                        <div class="row align-items-center">
+                            <div class="col-8 py-3">
+                                <h3 class="m-0 font-weight-700">
+                                    Payment Summary
+                                </h3>
+                            </div>
+                            <div class="col-4 py-3 text-end">
+                                <a href="index.html" class="text-decoration-none d-flex align-items-center justify-content-end"><span class="fs-6">Edit Payment Methods</span> <span class="icon icon-sm me-0 ms-2 icon-out-of-scope-aero-dark opacity-50"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2 mb-3 shadow">
+                            <table id="entity-listing" class="table data-table-payment-summary table-striped  w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="w-75">Card Name</th>
+                                        <th class="sorting-none"></th>
+                                        <th class="sorting-none"></th>
+                                        <th class="sorting-none"></th>
+                                        <th class="sorting-none"></th>
+                                        <th class="sorting-none"></th>
+                                        <th class="">Amount</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>Visa-0224</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>Visa-0224</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>Visa-0224</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>Visa-0224</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$ 349</td>
+                                    </tr>
+                                    <tfoot>
+                                        <tr class="py-2">
+                                            <td class="ps-3 fw-bold pb-4">Total</td>
+                                            <td class="pb-4"></td>
+                                            <td class="pb-4"></td>
+                                            <td class="pb-4"></td>
+                                            <td class="pb-4"></td>
+                                            <td class="pb-4"></td>
+                                            <td class="ps-4 fw-bold pb-4">$ 349</td>
+                                        </tr>
+                                    </tfoot>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+
+    <script>
+        $(function () {
+            $('input[id="formateDateCompleted"]').daterangepicker({
+                singleDatePicker: true,
+                // showDropdowns: true,
+                autoUpdateInput: false,
+                autoApply: true,
+                //parentEl: $('.calender-parent'),
+                applyButtonClasses: 'btn-info',
+                drops: 'bottom',
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+
+            });
+            $('input[id="formateDateCompleted"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY'));
+            });
+        });
+
+        $(function () {
+            $('input[id="formationDate"]').daterangepicker({
+                singleDatePicker: true,
+                // showDropdowns: true,
+                autoUpdateInput: false,
+                autoApply: true,
+                parentEl: $('.calender-input-filed'),
+                applyButtonClasses: 'btn-info',
+                drops: 'bottom',
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+
+            });
+            $('input[id="formationDate"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY'));
+            });
+        });
+
+    </script>
+    <!-- select2 init -->
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    <!-- select2 init end-->
+    
+    <script src="dist/js/plugins.min.js"></script>
+    <script src="dist/js/custom.min.js"></script>
+
+    <!-- Scripts End-->
+</body>
+
+</html>
