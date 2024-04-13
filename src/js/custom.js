@@ -83,7 +83,7 @@ $(function () {
     },
     "responsive": true,
     "scrollX": true,
-    "scrollY": "28vh",
+    "scrollY": "30vh",
   })
   $('.data-table-listing-folder').DataTable({
     
