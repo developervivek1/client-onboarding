@@ -3775,7 +3775,7 @@
                 buttons: {
                     confirm: {
                         text: 'Continue',
-                        btnClass: 'btn-dark text-capitalize font-weight-500 px-5',
+                        btnClass: 'btn-dark text-capitalize font-weight-500 px-5 mb-4',
                         action: function () {
                         }
                     }
@@ -3787,7 +3787,7 @@
         $('.completed-entity').on('click', function () {
             $.confirm({
                 // icon: 'icon icon-completed-green-check icon-xxl',
-                columnClass: 'col-md-5',
+                columnClass: 'col-5 col-xxl-4',
                 title: 'Complete these Entities ?',
                 titleClass: 'fs-5 font-weight-500 opacity-75',
                 content: 'This will mark them as completed. This isn’t permanent - updating any info will revert the Entity back to Pending Review audit status.',
@@ -3817,15 +3817,11 @@
                             buttons: {
                                 confirm: {
                                     text: 'Continue',
-                                    btnClass: 'btn-dark text-capitalize font-weight-500 px-5',
+                                    btnClass: 'btn-dark text-capitalize font-weight-500 px-5 mb-4',
                                     action: function () {
                                     }
                                 }
                             },
-                            // onContentReady: function ($content) {
-                            //     $content.append('<div><input class="form-check-input me-3" type="checkbox" id="dont-show-again"><label class="form-check-label" for="dont-show-again">Don\'t show again</label></div>');
-                            // }
-                           
                         });
         
                         }
@@ -3843,14 +3839,6 @@
                     }
                     
                 },
-          
-                // onContentReady: function ($content) {
-                //     setTimeout(function() {
-                //         $content.closest('.modal').find('.modal-footer').append('<div class="mt-3">This is additional text below the buttons.</div>');
-
-                //     }, 100);
-                   
-                // }
                
             })
 
@@ -3870,11 +3858,11 @@
                 buttons: {
                     cancel: {
                         text: 'Cancel',
-                        btnClass: 'btn btn-outline-dark border border-dark text-capitalize font-weight-500 px-5',
+                        btnClass: 'btn btn-outline-dark border border-dark text-capitalize font-weight-500 px-5 mb-4',
                     },
                     confirm: {
                         text: 'Confirm',
-                        btnClass: 'btn btn-dark text-capitalize font-weight-500 px-5',
+                        btnClass: 'btn btn-dark text-capitalize font-weight-500 px-5 mb-4',
 
                         action: function () {
                             $.confirm({
@@ -3889,7 +3877,7 @@
                             buttons: {
                                 confirm: {
                                     text: 'Continue',
-                                    btnClass: 'btn-dark text-capitalize font-weight-500 px-5',
+                                    btnClass: 'btn-dark text-capitalize font-weight-500 px-5 mb-4',
                                     action: function () {
                                     }
                                 }
