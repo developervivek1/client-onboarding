@@ -88,19 +88,49 @@
             <div class="main-content-wrapper">
                 <div class="container-fluid container-lg">
                     <div class="header py-1">
-
                         <div class="row align-items-center">
-                            <div class="col-12 col-xl-12 col-lg-12 py-3">
+                            <div class="col-3 col-xl-3 col-lg-3">
                                 <h3 class="m-0 font-weight-700">
 
                                     Onboarding - Entities
 
                                 </h3>
                             </div>
+                            <div
+                                class="col col-md-9 col-xl-9 col-lg-9 d-flex align-items-center justify-content-between justify-content-md-end">
 
+                                <div class="profile-nav">
+                                    <div class="dropdown white-bg p-0 rounded-5">
+
+                                        <a class="nav-link dropdown-toggle show px-3" href="#" data-bs-toggle="dropdown"
+                                            aria-expanded="true">
+                                            <span class="avatar avatar-lg ms-n3">
+                                                <img src="../dist/images/avatar.png" alt="" />
+                                            </span>
+                                            <span class="user-name fw-bold">Roman</span>
+                                        </a>
+                                        <ul class="dropdown-menu" data-bs-popper="static">
+                                            <li>
+                                                <span
+                                                    class="dropdown-item py-3 d-flex align-items-center border-bottom">
+                                                    Account
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item py-3 d-flex align-items-center"
+                                                    href="../../login.html">
+                                                    <span class="icon icon-logout me-4"></span>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class="container-fluid container-lg">
                     <div class="main-content pt-3">
                         <!-- Card Section Start -->
@@ -122,8 +152,7 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <p>Please verify the following information is accurate and
-                                                        complete.</p>
+                                                    <p class="mb-0">Please review and confirm your entities and jurisdictions. Information added by Filejet and missing required information is highlighted.</p>
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
@@ -152,8 +181,7 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <p>The following items require additional information to be entered
-                                                        before they can be added to Filejet.</p>
+                                                    <p class="mb-0">Entities and jurisdictions you have indicated will be out of scope for Filejet’s services.</p>
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
@@ -181,14 +209,14 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <p>The following items have been verified.</p>
+                                                    <p class="mb-0">Entities and jurisdictions you have reviewed and confirmed.  You may finalize this list and begin using Filejet once all items are out of Pending Review and at least one payment method is setup.</p>
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-end mt-2 pb-2">
                                                 <div class="text-success text-xl">24</div>
                                                 <div>
                                                     <button type="button"
-                                                        class="btn btn-secondary px-4 text-capitalize">Finalize<span
+                                                        class="btn btn-secondary px-4 text-capitalize disabled">Finalize<span
                                                             class="icon icon-finalize-dark ms-3"></span></button>
                                                 </div>
                                             </div>
@@ -203,50 +231,37 @@
                         <div class="row">
                             <h3 class="m-0 font-weight-700">Entity Listing</h3>
                             <div class="mt-4">
+                                
                                 <form action="" method="post">
-                                    <div class="row">
+                                    <div class="row g-4">
                                         <div class="position-relative col-md-4">
                                             <input type="text" class="form-control min-height-auto mb-0 w-100 pe-5 fs-5"
                                                 placeholder="Search" id="search">
                                             <span
                                                 class="icon icon-md icon-search-grey me-0 opacity-75 position-absolute top-50 end-0 bg-white translate-middle me-4"></span>
                                         </div>
-                                        <div class="d-flex col-md-2">
-                                            <div class="d-flex flex-fill">
-
+                                            <div class="col-md-2">
                                                 <button type="button"
-                                                    class="deleted-entity btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Delete
-                                                    <span class="icon icon-delete-dark me-0 ms-3"></span></button>
-
+                                                    class="h-100 deleted-entity btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Out of Scope
+                                                    <span class="icon icon-out-of-scope-dark me-0 ms-3 col-1"></span></button>
                                             </div>
-                                        </div>
-                                        <div class="d-flex col-md-2">
-                                            <div class="d-flex flex-fill">
-                                                <fieldset enabled="enabled" class="d-flex flex-fill">
+                                            <div class="col-md-2">
                                                     <button type="button"
-                                                        class="btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center"
+                                                        class="h-100 btn btn-light border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center"
                                                         role="button" data-bs-toggle="modal"
                                                         data-bs-target="#updateEntityDetails">Edit <span
                                                             class="icon icon-edit-dark me-0 ms-3"></span></button>
-                                                </fieldset>
                                             </div>
-                                        </div>
-                                        <div class="d-flex col-md-2">
-                                            <div class="d-flex flex-fill">
-
+                                            <div class="col-md-2">
                                                 <button type="button"
-                                                    class="completed-entity btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Complete
-                                                    <span class="icon icon-completed-dark me-0 ms-3"></span></button>
-
+                                                    class="h-100 completed-entity btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Confirm
+                                                    <span class="icon icon-completed-dark me-0 ms-3 col-1"></span></button>
                                             </div>
-                                        </div>
-                                        <div class="d-flex col-md-2">
-                                            <div class="d-flex flex-fill">
+                                            <div class="col-md-2">
                                                 <button type="button"
-                                                    class="btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Add
+                                                    class="h-100 btn btn-light flex-fill border-dark px-4 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Add
                                                     New <span class="icon icon-add-new-dark me-0 ms-3"></span></button>
                                             </div>
-                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -272,9 +287,9 @@
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
                                                         <a href="#in-progress"
-                                                            class="nav-link px-4 px-xl-5 text-danger opacity-100 d-flex align-items-center"
+                                                            class="nav-link px-4 px-xl-5 text-secondary opacity-100 d-flex align-items-center"
                                                             data-bs-toggle="tab"><span
-                                                                class="icon icon-out-of-scope-danger"></span>Out of
+                                                                class="icon icon-out-of-scope-dark opacity-50"></span>Out of
                                                             Scope (24)</a>
                                                     </li>
                                                     <li
@@ -282,7 +297,7 @@
                                                         <a href="#completed"
                                                             class="nav-link px-4 px-xl-5 text-success opacity-100 d-flex align-items-center"
                                                             data-bs-toggle="tab"><span
-                                                                class="icon icon-completed-success"></span>Completed
+                                                                class="icon icon-completed-success"></span>Confirmed
                                                             (24)</a>
                                                     </li>
 
@@ -3370,12 +3385,12 @@
                                 Strategies
 
                                 > Domestic - Delaware</span>
-                            <h3 class="fs-3 m-0 font-weight-700">Update Entity Details</h3>
+                            <h3 class="fs-3 m-0 font-weight-700">Review Entity Details</h3>
                         </div>
                     </div>
                     <div>
                         <p>
-                            Enter the details of the Entity by filling out the form below.
+                            Please review and confirm the details of your entity and jurisdiction below.  This information will be used to auto-populate filings.  Information added  by Filejet and missing required information is indicated on each field.
                         </p>
                     </div>
                 </div>
@@ -3409,8 +3424,8 @@
                             <div>
                                 <label for="" class="form-label font-weight-700 text-warning">Name of Entity</label>
                                 <div class="float-end">
-                                    <span class="icon icon-pending-review col-1"></span>
-                                    <span class="text-warning">Pending Review</span>
+                                    <!-- <span class="icon icon-pending-review col-1"></span> -->
+                                    <span class="text-warning">Added by Filejet</span>
                                 </div>
                                 <input type="text" class="form-control" id="" value="Bluebird Business Strategies" />
                             </div>
@@ -3419,8 +3434,8 @@
                             <div>
                                 <label for="" class="form-label font-weight-700 text-warning">Entity State</label>
                                 <div class="float-end">
-                                    <span class="icon icon-pending-review col-1"></span>
-                                    <span class="text-warning">Pending Review</span>
+                                    <!-- <span class="icon icon-pending-review col-1"></span> -->
+                                    <span class="text-warning">Added by Filejet</span>
                                 </div>
                                 <input type="text" class="form-control" id="" value="Delaware" />
                             </div>
@@ -3664,21 +3679,37 @@
                 <!-- Modal Body End -->
 
                 <div class="modal-footer mt-3 pb-0">
-                    <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-link text-uppercase text-decoration-none font-weight-600"
-                            data-bs-dismiss="modal">
-                            <span class="icon icon-angle-left icon-sm"></span> Cancel
-                        </button>
-                        <button type="button"
-                            class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 ms-3"
-                            data-bs-dismiss="modal">
-                            SAVE and EXit
-                        </button>
-                        <button type="button"
-                            class="completed-entity btn btn-dark text-uppercase py-3 px-4 disable rounded-3 ms-3"
-                            data-bs-dismiss="modal">
-                            Complete <span class="icon icon-check-circle-white"></span>
-                        </button>
+                    
+                    <div class="d-flex justify-content-between w-100">
+                        <div>
+                            <button type="button"
+                                class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3"
+                                data-bs-dismiss="modal">
+                                Out of Scope
+                            </button>
+                            <button type="button"
+                                class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 d-none"
+                                data-bs-dismiss="modal">
+                                In Scope
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-link text-uppercase text-decoration-none font-weight-600"
+                                data-bs-dismiss="modal">
+                                <span class="icon icon-angle-left icon-sm"></span> Cancel
+                            </button>
+                            <button type="button"
+                                class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 ms-3"
+                                data-bs-dismiss="modal">
+                                SAVE and EXit
+                            </button>
+                            <button type="button"
+                                class="completed-entity btn btn-dark text-uppercase py-3 px-3 disable rounded-3 ms-3"
+                                data-bs-dismiss="modal">
+                                Complete <span class="icon icon-check-circle-white"></span>
+                            </button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -3788,9 +3819,9 @@
             $.confirm({
                 // icon: 'icon icon-completed-green-check icon-xxl',
                 columnClass: 'col-5 col-xxl-4',
-                title: 'Complete these Entities ?',
+                title: 'Confirm these Entities ?',
                 titleClass: 'fs-5 font-weight-500 opacity-75',
-                content: 'This will mark them as completed. This isn’t permanent - updating any info will revert the Entity back to Pending Review audit status.',
+                content: 'This will mark them as confirmed. This isn’t permanent - updating any info will revert the Entity back to Pending Review audit status.',
                 theme: 'modern',
                 smoothContent: 'true',
                 // closeIcon: true,
@@ -3801,7 +3832,7 @@
                         btnClass: 'btn btn-outline-dark border border-dark text-capitalize font-weight-500 px-5',
                     },
                     confirm: {
-                        text: 'Complete',
+                        text: 'Confirm',
                         btnClass: 'btn btn-dark text-capitalize font-weight-500 px-5',
 
                         action: function () {
@@ -3848,9 +3879,9 @@
             $.confirm({
                 // icon: 'icon icon-completed-green-check icon-xxl',
                 columnClass: 'col-md-5',
-                title: 'Delete Entity/Entities',
+                title: 'Out Of Scopes' + '<span class="icon icon-out-of-scope-dark ms-3"></span>',
                 titleClass: 'fs-5 font-weight-500 opacity-75',
-                content: 'Are You Sure You Want to Delete these Entities? ' + '<br/>' + 'This cannot be undone.',
+                content: 'Are you sure you want to mark these entities and jurisdictions out of scope?  Filejet will not provide any services for out of scope entities and jurisdictions.',
                 theme: 'modern',
                 smoothContent: 'true',
                 // closeIcon: true,
