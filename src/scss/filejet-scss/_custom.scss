@@ -909,6 +909,9 @@ label {
 .cursor-pointer {
   cursor: pointer;
 }
+.cursor-pointer-disabled{
+  cursor:no-drop !important; 
+}
 
 // billing
 .plans-tabs {
