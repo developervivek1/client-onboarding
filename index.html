@@ -280,27 +280,27 @@
                                                 <ul class="nav nav-tabs">
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-right-edge">
-                                                        <a href="#pending-review"
+                                                        <button href="#pending-review"
                                                             class="nav-link px-4 px-xl-5 text-warning active opacity-100 d-flex align-items-center"
-                                                            data-bs-toggle="tab"><span
+                                                            data-bs-toggle="tab" id="pending-review-tab"><span
                                                                 class="icon icon-pending-review"></span>Pending Review
-                                                            (24)</a>
+                                                            (24)</button>
                                                     </li>
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
-                                                        <a href="#in-progress"
+                                                        <button href="#out-of-scope"
                                                             class="nav-link px-4 px-xl-5 text-secondary opacity-100 d-flex align-items-center"
-                                                            data-bs-toggle="tab"><span
+                                                            data-bs-toggle="tab" id="out-of-scope-tab"><span
                                                                 class="icon icon-out-of-scope-dark opacity-50"></span>Out of
-                                                            Scope (24)</a>
+                                                            Scope (24)</button>
                                                     </li>
                                                     <li
                                                         class="nav-item nav-items hide-tabs-grid-view position-relative curve-bottom-edge">
-                                                        <a href="#completed"
+                                                        <button href="#completed"
                                                             class="nav-link px-4 px-xl-5 text-success opacity-100 d-flex align-items-center"
-                                                            data-bs-toggle="tab"><span
+                                                            data-bs-toggle="tab" id="completed-tab"><span
                                                                 class="icon icon-completed-success"></span>Confirmed
-                                                            (24)</a>
+                                                            (24)</button>
                                                     </li>
 
 
@@ -1507,7 +1507,7 @@
                                         </div>
                                         <!-- Pending tab end-->
                                         <!-- In-progress tab -->
-                                        <div class="tab-pane fade show" id="in-progress">
+                                        <div class="tab-pane fade show" id="out-of-scope">
                                             <div class="">
                                                 <table id="entity-listing2"
                                                     class="table table-nowrap data-table-listing table-nowrap table-striped w-100">
@@ -1529,12 +1529,12 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
-                                                                            type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                            type="checkbox" name="" id="out-of-scope-checkbox"></span>
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1569,12 +1569,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1609,12 +1609,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1649,12 +1649,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1689,12 +1689,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1729,12 +1729,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1769,12 +1769,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1809,12 +1809,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1849,12 +1849,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1889,12 +1889,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1929,12 +1929,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -1969,12 +1969,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -2009,12 +2009,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -2049,12 +2049,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="even">
-                                                            <td class="sorting_1 disabled">
+                                                            <td class="sorting_1">
                                                                 <div class="d-flex">
                                                                     <span><input class="form-check-input me-3"
                                                                             type="checkbox" name="" id="1"></span>
-                                                                    <a href="javascript:void()" contenteditable="true"
-                                                                        class="cursor-pointer" role="button"
+                                                                    <a href="javascript:void()"
+                                                                        class="disabled cursor-pointer" role="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#updateEntityDetails">Entity
                                                                         Name 1</a>
@@ -3371,8 +3371,9 @@
     </div>
     </div>
 
+
     <!-- updateEntityDetails Modal start-->
-    <div class="modal modal-right fade" id="updateEntityDetails" tabindex="-1" aria-labelledby="searchModalLabel"
+    <div class="modal modal-right fade" id="updateEntityDetails" tabindex="-1" aria-labelledby="updateEntityDetailsModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-end modal-dialog-scrollable modal-md-plus my-0 min-vh-100">
             <div class="modal-content border-0 rounded-0">
@@ -3685,13 +3686,13 @@
                     <div class="d-flex justify-content-between w-100">
                         <div>
                             <button type="button"
-                                class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3"
-                                data-bs-dismiss="modal">
+                                class="out-of-scope-confirm btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3"
+                                data-bs-dismiss="modal" id="outOfScopeBtn">
                                 Out of Scope
                             </button>
                             <button type="button"
-                                class="example5-3-3 btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 d-none"
-                                data-bs-dismiss="modal">
+                                class="in-scope-confirm btn btn-tertiary-grey text-uppercase py-3 px-3 rounded-3 d-none"
+                                data-bs-dismiss="modal" id="inScopeBtn">
                                 In Scope
                             </button>
                         </div>
@@ -3924,7 +3925,72 @@
 
         })
 
+        $('.out-of-scope-confirm').on('click', function () {
+            $.confirm({
+                columnClass: 'col-md-5',
+                icon: 'icon icon-completed-green-check icon-xxl',
+                title: 'Success',
+                content: 'Entity details moved to Out of Scope successfully.',
+                theme: 'modern',
+                // closeIcon: true,
+                animation: 'scale',
+                // type: 'orange',
+                buttons: {
+                    confirm: {
+                        text: 'Continue',
+                        btnClass: 'btn-dark text-capitalize font-weight-500 px-5 mb-4',
+                        action: function () {
+                        }
+                    }
+                },
+            });
+        
+        });
+        $('.in-scope-confirm').on('click', function () {
+            $.confirm({
+                columnClass: 'col-md-5',
+                icon: 'icon icon-completed-green-check icon-xxl',
+                title: 'Success',
+                content: 'Entity details moved to Pending Review successfully.',
+                theme: 'modern',
+                // closeIcon: true,
+                animation: 'scale',
+                // type: 'orange',
+                buttons: {
+                    confirm: {
+                        text: 'Continue',
+                        btnClass: 'btn-dark text-capitalize font-weight-500 px-5 mb-4',
+                        action: function () {
+                        }
+                    }
+                },
+            });
+        
+        });
+
     </script>
+    
+    <!-- Review Entity Details modal buttons(scope/not in scope) show and hide footer button -->
+    <script>
+        const outOfScopeBtn = document.getElementById('outOfScopeBtn');
+        const inScopeBtn = document.getElementById('inScopeBtn');
+      
+        document.querySelectorAll('.nav-link').forEach(button => {
+          button.addEventListener('click', () => {
+            outOfScopeBtn.classList.add('d-none');
+            inScopeBtn.classList.add('d-none');
+            
+            if (button.id === 'pending-review-tab') {
+                outOfScopeBtn.classList.remove('d-none');
+            } else if (button.id === 'out-of-scope-tab') {
+                inScopeBtn.classList.remove('d-none');
+            } else if (button.id === 'completed-tab') {
+                outOfScopeBtn.classList.remove('d-none');
+            }
+          });
+        });
+    </script>
+    <!-- end -->
     <script src="dist/js/plugins.min.js"></script>
     <script src="dist/js/custom.min.js"></script>
 
