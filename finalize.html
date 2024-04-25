@@ -670,9 +670,9 @@
                        </button>
 
                        <button type="button" data-bs-toggle="modal"
-                           data-bs-target="#subscriptionBillingInvoiceModal"
+                           data-bs-target="#afterPayNowSubscriptionBillingInvoiceModal"
                            class="btn btn-secondary px-4 text-decoration-none font-weight-600">
-                           Next
+                           Pay Now
                        </button>
 
                    </div>
@@ -835,10 +835,9 @@
                                    type="hidden" name="_csrfToken" autocomplete="off"
                                    value="09fbb998912955465fb69a65c3bbfb057f5efa5a6b0f86939d32669a13fcddbfeaafde41963f72fb2205cd9ad0d59efb1391751c24316e4500c56f72a8f48d94">
                            </div>
-                           <p>By Clicking the Submit button, the entities included in this Billing cycle will be
-                               renewed for another 12 months.</p>
-                           <p>Please Submit payment to Filejet on or before your due date stated within your
-                               Invoice</p>
+                           <p>Your order is processing . You may now access the portal to view the entities. </p>
+                           <!-- <p>Please Submit payment to Filejet on or before your due date stated within your
+                               Invoice</p> -->
                            <div class="d-flex justify-content-between">
                                <div>
                                    <label for="" class="form-label text-uppercase">Total Amount</label>
@@ -849,8 +848,12 @@
                                    <p class="font-weight-600">$200.00</p>
                                </div>
                            </div>
+                           
                        </form>
                    </div>
+                    <div class="text-center my-4">
+                        <button type="button" class="btn btn-tertiary-grey border font-weight-600" onclick="window.location.href='https://filejet-redesign.vercel.app/'">Click to Proceed to your dashboard</button>
+                    </div>
                </div>
 
                <!-- Modal Body Ends-->
