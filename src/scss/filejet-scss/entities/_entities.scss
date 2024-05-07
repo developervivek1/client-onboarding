@@ -226,15 +226,15 @@
             }
         }
         .placeholder-color::placeholder{
-            @extend .text-danger;
+            @extend .text-danger,.opacity-100;
         }
         input[type="text"]{
-            min-width: 100px;
+            min-width: 111px;
         }
     
 }
 #completed{
     input[type="text"]{
-        min-width: 100px;
+        min-width: 111px;
     }
 }
