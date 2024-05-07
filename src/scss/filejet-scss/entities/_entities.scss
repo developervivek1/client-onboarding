@@ -217,3 +217,24 @@
     }
 }
 }
+
+#pending-review{
+    
+        .icon-with-state {
+            .select2-selection__rendered{
+                @extend .text-warning;
+            }
+        }
+        .placeholder-color::placeholder{
+            @extend .text-danger;
+        }
+        input[type="text"]{
+            min-width: 100px;
+        }
+    
+}
+#completed{
+    input[type="text"]{
+        min-width: 100px;
+    }
+}
