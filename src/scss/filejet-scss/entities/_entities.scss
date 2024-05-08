@@ -231,10 +231,16 @@
         input[type="text"]{
             min-width: 111px;
         }
+        .select2-container{
+            @extend .w-auto;
+        }
     
 }
 #completed{
     input[type="text"]{
         min-width: 111px;
     }
+}
+.select2-dropdown.select2-dropdown--above{
+    width: max-content !important;
 }
