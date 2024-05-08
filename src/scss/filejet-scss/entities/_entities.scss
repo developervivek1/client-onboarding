@@ -222,9 +222,11 @@
     
         .icon-with-state {
             .select2-selection__rendered{
-                @extend .text-warning;
+                @extend .text-warning,.text-wrap;
+                line-height: 16px;
             }
         }
+
         .placeholder-color::placeholder{
             @extend .text-danger,.opacity-100;
         }
@@ -232,7 +234,14 @@
             min-width: 111px;
         }
         .select2-container{
-            @extend .w-auto;
+            @extend .w-auto,.text-wrap;
+            .select2-selection--single{
+                height: auto !important;
+                .select2-selection__rendered{
+                    @extend .text-wrap;
+                    line-height: 16px;
+                }
+            }
         }
     
 }
