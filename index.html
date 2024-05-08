@@ -3683,6 +3683,26 @@
                         </div>
                         <!-- bulk entity name end-->
                         <div class="mb-3">
+                            <div class="col">
+                                <label for="" class="form-label">FORMATION TYPE</label>
+                                <select class="form-select form-control">
+                                  <option selected="">Select Formation Type</option>
+                                  <option value="1">Domestic</option>
+                                  <option value="2">Foreign</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="" content="Home Entity" for="home_entity">Home Entity</label>
+                            <select name="home_entity" id="home_entity" class="home-entity-field form-control form-select rounded" data-target-element="home_entity" data-state="#entity_state" data-placeholder="Select Home Entity" data-ajax-url="http://13.64.144.136/qa/partner/entities/search-home-entites" data-entity-url="http://13.64.144.136/qa/partner/entities/get-entity-detail">
+                                <option value="">Select Home Entity</option>
+                                <option value="1">BE Entity LLC (CA)</option>
+                                <option value="2">Entity with Group LLC (CA)</option>
+                                <option value="3">Entity without Group LLC (CA)</option>
+                                <option value="4">ABC Hotels INC (FL)</option>
+                            </select><small class="form-text text-blue w-100"></small>
+                        </div>
+                        <div class="mb-3">
                             <div>
                                 <label for="" class="form-label font-weight-700 text-warning">Name of Entity</label>
                                 <div class="float-end">
@@ -3789,107 +3809,242 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <div class="w-100">
-                                <label for="" class="form-label">Management- The LLC is managed by</label>
+                        <!-- accordion -->
+                        <div class="accordion mb-3" id="officers-address">
+                            <div class="accordion-item mb-3 rounded-2 overflow-hidden border-0 box-shadow">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button bg-white text-dark text-uppercase" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <span class="fw-bold text-uppercase">LLC</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#officers-address">
+                                    <div class="accordion-body">
+                                        <div class="mb-3">
+                                            <div class="w-100">
+                                                <label for="" class="form-label">Management- The LLC is managed by</label>
+                                            </div>
+                                            <div class="radio-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                        id="aspFileject" value="option1">
+                                                    <label class="text-capitalize" for="aspFileject">One Manager</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
+                                                        value="option2">
+                                                    <label class="text-capitalize" for="aspOther">More Than One Manager</label>
+                                                </div>
+                                                <div class="form-check form-check-inlin">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
+                                                        value="option2">
+                                                    <label class="text-capitalize" for="aspOther">All LLC Member(s)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="mb-3">
+                                            <div>
+                                                <button type="button" class="btn btn-tertiary-grey me-3 text-dark text-uppercase">Manager</button>
+                                                <button type="button" class="btn btn-tertiary-grey text-dark text-uppercase">Member</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div>
+                                                <div class="bg-light border rounded-2 border-bottom-0">
+                                                    <table class="table table-striped w-100 table-nowrap dataTable mb-0 no-footer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:20%"><strong>Name</strong></td>
+                                                                <td style="width:30%"><strong>Address</strong></td>
+                                                                <td style="width:20%"><strong>Role</strong></td>
+                                                                <td style="width:10%"><strong>Action</strong></td>
+                                                            </tr>
+                                                            <tr class="soi-user-listing-member">
+                                                                <td>
+                                                                    <div>John Doe</div>
+                                                                </td>
+                
+                                                                <td>
+                                                                    <div>9350 East Flair Dr. El Monte, CA 91731</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>Member</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
+                                                                            class="user-btn ">
+                                                                            <span class="icon icon-edit cursor-pointer"
+                                                                                data-toggle="tooltip" title="EDIT"></span></a>
+                
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-type="member" data-mode="delete"
+                                                                            class="delete-user-btn ">
+                                                                            <span class="icon icon-delete me-3 cursor-pointer"
+                                                                                data-toggle="tooltip" title="DELETE"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="soi-user-listing-member">
+                                                                <td>
+                                                                    <div>Jim Hal</div>
+                                                                </td>
+                
+                                                                <td>
+                                                                    <div>#9350 Unit, A El Monte, CA 91731</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>Member</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
+                                                                            class="user-btn ">
+                                                                            <span class="icon icon-edit cursor-pointer"
+                                                                                data-toggle="tooltip" title="EDIT"></span></a>
+                
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-type="member" data-mode="delete"
+                                                                            class="delete-user-btn ">
+                                                                            <span class="icon icon-delete me-3 cursor-pointer"
+                                                                                data-toggle="tooltip" title="DELETE"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
                             </div>
-                            <div class="radio-group">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="aspFileject" value="option1">
-                                    <label class="text-capitalize" for="aspFileject">One Manager</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
-                                        value="option2">
-                                    <label class="text-capitalize" for="aspOther">More Than One Manager</label>
-                                </div>
-                                <div class="form-check form-check-inlin">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
-                                        value="option2">
-                                    <label class="text-capitalize" for="aspOther">All LLC Member(s)</label>
+                            <div class="accordion-item mb-3 rounded-2 overflow-hidden border-0 box-shadow">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed bg-white text-dark" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="fw-bold text-uppercase">PROFIT</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo" data-bs-parent="#officers-address">
+                                    <div class="accordion-body">
+                                        <div class="mb-3">
+                                            <div class="w-100">
+                                                <label for="" class="form-label">Management- The LLC is managed by</label>
+                                            </div>
+                                            <div class="radio-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                        id="aspFileject" value="option1">
+                                                    <label class="text-capitalize" for="aspFileject">One Manager</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
+                                                        value="option2">
+                                                    <label class="text-capitalize" for="aspOther">More Than One Manager</label>
+                                                </div>
+                                                <div class="form-check form-check-inlin">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aspOther"
+                                                        value="option2">
+                                                    <label class="text-capitalize" for="aspOther">All LLC Member(s)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="mb-3">
+                                            <div>
+                                                <button type="button" class="btn btn-tertiary-grey me-3 text-dark text-uppercase">Manager</button>
+                                                <button type="button" class="btn btn-tertiary-grey text-dark text-uppercase">Member</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div>
+                                                <div class="bg-light border rounded-2 border-bottom-0">
+                                                    <table class="table table-striped w-100 table-nowrap dataTable mb-0 no-footer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:20%"><strong>Name</strong></td>
+                                                                <td style="width:30%"><strong>Address</strong></td>
+                                                                <td style="width:20%"><strong>Role</strong></td>
+                                                                <td style="width:10%"><strong>Action</strong></td>
+                                                            </tr>
+                                                            <tr class="soi-user-listing-member">
+                                                                <td>
+                                                                    <div>John Doe</div>
+                                                                </td>
+                
+                                                                <td>
+                                                                    <div>9350 East Flair Dr. El Monte, CA 91731</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>Member</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
+                                                                            class="user-btn ">
+                                                                            <span class="icon icon-edit cursor-pointer"
+                                                                                data-toggle="tooltip" title="EDIT"></span></a>
+                
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-type="member" data-mode="delete"
+                                                                            class="delete-user-btn ">
+                                                                            <span class="icon icon-delete me-3 cursor-pointer"
+                                                                                data-toggle="tooltip" title="DELETE"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="soi-user-listing-member">
+                                                                <td>
+                                                                    <div>Jim Hal</div>
+                                                                </td>
+                
+                                                                <td>
+                                                                    <div>#9350 Unit, A El Monte, CA 91731</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>Member</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
+                                                                            class="user-btn ">
+                                                                            <span class="icon icon-edit cursor-pointer"
+                                                                                data-toggle="tooltip" title="EDIT"></span></a>
+                
+                                                                        <a href="javascript:;" data-key="id" data-value="528"
+                                                                            data-type="member" data-mode="delete"
+                                                                            class="delete-user-btn ">
+                                                                            <span class="icon icon-delete me-3 cursor-pointer"
+                                                                                data-toggle="tooltip" title="DELETE"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
-
-                        <div class="mb-3">
-                            <div>
-                                <button type="button" class="btn btn-tertiary-grey me-3">Manager</button>
-                                <button type="button" class="btn btn-tertiary-grey">Member</button>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>
-                                <div class="bg-white rounded-2 shadow-sm">
-                                    <table class="table table-striped w-100 table-nowrap dataTable no-footer">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width:20%"><strong>Name</strong></td>
-                                                <td style="width:30%"><strong>Address</strong></td>
-                                                <td style="width:20%"><strong>Role</strong></td>
-                                                <td style="width:10%"><strong>Action</strong></td>
-                                            </tr>
-                                            <tr class="soi-user-listing-member">
-                                                <td>
-                                                    <div>John Doe</div>
-                                                </td>
-
-                                                <td>
-                                                    <div>9350 East Flair Dr. El Monte, CA 91731</div>
-                                                </td>
-                                                <td>
-                                                    <div>Member</div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="javascript:;" data-key="id" data-value="528"
-                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
-                                                            class="user-btn ">
-                                                            <span class="icon icon-edit cursor-pointer"
-                                                                data-toggle="tooltip" title="EDIT"></span></a>
-
-                                                        <a href="javascript:;" data-key="id" data-value="528"
-                                                            data-type="member" data-mode="delete"
-                                                            class="delete-user-btn ">
-                                                            <span class="icon icon-delete me-3 cursor-pointer"
-                                                                data-toggle="tooltip" title="DELETE"></span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="soi-user-listing-member">
-                                                <td>
-                                                    <div>Jim Hal</div>
-                                                </td>
-
-                                                <td>
-                                                    <div>#9350 Unit, A El Monte, CA 91731</div>
-                                                </td>
-                                                <td>
-                                                    <div>Member</div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="javascript:;" data-key="id" data-value="528"
-                                                            data-bs-toggle="modal" data-bs-target="#addBeneficialModal"
-                                                            class="user-btn ">
-                                                            <span class="icon icon-edit cursor-pointer"
-                                                                data-toggle="tooltip" title="EDIT"></span></a>
-
-                                                        <a href="javascript:;" data-key="id" data-value="528"
-                                                            data-type="member" data-mode="delete"
-                                                            class="delete-user-btn ">
-                                                            <span class="icon icon-delete me-3 cursor-pointer"
-                                                                data-toggle="tooltip" title="DELETE"></span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- accordion end -->
                         <div class="mb-3">
                             <div class="w-100">
                                 <label for="" class="form-label">In Scope Services</label>
@@ -3936,26 +4091,7 @@
                                 <option value="3">Group Name 1</option>
                             </select>
                         </div>
-                        <div class="mb-3">
-                            <div class="col">
-                                <label for="" class="form-label">FORMATION TYPE</label>
-                                <select class="form-select form-control">
-                                  <option selected="">Select Formation Type</option>
-                                  <option value="1">Domestic</option>
-                                  <option value="2">Foreign</option>
-                                </select>
-                              </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="" content="Home Entity" for="home_entity">Home Entity</label>
-                            <select name="home_entity" id="home_entity" class="home-entity-field form-control form-select rounded" data-target-element="home_entity" data-state="#entity_state" data-placeholder="Select Home Entity" data-ajax-url="http://13.64.144.136/qa/partner/entities/search-home-entites" data-entity-url="http://13.64.144.136/qa/partner/entities/get-entity-detail">
-                                <option value="">Select Home Entity</option>
-                                <option value="1">BE Entity LLC (CA)</option>
-                                <option value="2">Entity with Group LLC (CA)</option>
-                                <option value="3">Entity without Group LLC (CA)</option>
-                                <option value="4">ABC Hotels INC (FL)</option>
-                            </select><small class="form-text text-blue w-100"></small>
-                        </div>                                
+                                                        
                     </form>
                 </div>
                 <!-- Modal Body End -->
