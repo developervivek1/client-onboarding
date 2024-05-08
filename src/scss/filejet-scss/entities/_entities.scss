@@ -222,7 +222,7 @@
     
         .icon-with-state {
             .select2-selection__rendered{
-                @extend .text-warning,.text-wrap;
+                @extend .text-warning,.text-wrap,.fixed-max-width;
                 line-height: 16px;
             }
         }
@@ -238,7 +238,7 @@
             .select2-selection--single{
                 height: auto !important;
                 .select2-selection__rendered{
-                    @extend .text-wrap;
+                    @extend .text-wrap,.fixed-max-width;
                     line-height: 16px;
                 }
             }
