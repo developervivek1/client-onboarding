@@ -160,6 +160,12 @@
 .fixed-max-width {
     max-width: 300px !important;
 }
+.min-width-100{
+    min-width: 100px !important;
+}
+.max-width-130{
+    max-width: 130px !important;
+}
 
 .formation-date-min-width {
     min-width: 130px !important;
@@ -225,9 +231,6 @@
                 @extend .text-warning;
                 line-height: 16px;
                 white-space: unset;
-            }
-            .icon.icon-pending-review{
-                @extend .col-1;
             }
         }
 
