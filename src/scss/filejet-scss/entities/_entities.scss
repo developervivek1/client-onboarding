@@ -218,13 +218,16 @@
 }
 }
 
-#pending-review{
+.pending-review-listing{
     
         .icon-with-state {
             .select2-selection__rendered{
                 @extend .text-warning;
                 line-height: 16px;
                 white-space: unset;
+            }
+            .icon.icon-pending-review{
+                @extend .col-1;
             }
         }
 
@@ -246,7 +249,7 @@
         }
     
 }
-#completed{
+.completed-listing{
     input[type="text"]{
         min-width: 111px;
     }
