@@ -161,7 +161,7 @@
     max-width: 300px !important;
 }
 .min-width-100{
-    min-width: 100px !important;
+    min-width: 105px !important;
 }
 .max-width-130{
     max-width: 130px !important;
@@ -241,7 +241,7 @@
             @extend .text-danger,.opacity-100;
         }
         input[type="text"]{
-            min-width: 111px;
+            @extend .min-width-100;
                 &:focus{
                     outline: auto !important;
                 }
@@ -260,7 +260,7 @@
 }
 .completed-listing{
     input[type="text"]{
-        min-width: 111px;
+        @extend .min-width-100;
             &:focus{
                 outline: auto !important;
             }
