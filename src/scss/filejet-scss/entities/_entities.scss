@@ -242,6 +242,9 @@
         }
         input[type="text"]{
             min-width: 111px;
+                &:focus{
+                    outline: auto !important;
+                }
         }
         .select2-container{
             @extend .w-auto;
@@ -258,6 +261,9 @@
 .completed-listing{
     input[type="text"]{
         min-width: 111px;
+            &:focus{
+                outline: auto !important;
+            }
     }
 }
 .select2-dropdown.select2-dropdown--above{
