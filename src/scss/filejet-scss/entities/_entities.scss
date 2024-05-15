@@ -261,14 +261,11 @@
 .completed-listing{
     input[type="text"]{
         @extend .min-width-100;
-            // &:focus{
-            //     outline: auto !important;
-            // }
     }
 }
-.select2-dropdown.select2-dropdown--above{
-    width: max-content !important;
-}
+// .select2-dropdown.select2-dropdown--above{
+//     width: max-content !important;
+// }
 .form-select2{
     .select2.select2-container{
         @extend .w-100,.shadow-lg,.rounded-2;
