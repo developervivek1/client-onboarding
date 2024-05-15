@@ -242,9 +242,9 @@
         }
         input[type="text"]{
             @extend .min-width-100;
-                &:focus{
-                    outline: auto !important;
-                }
+                // &:focus{
+                //     outline: auto !important;
+                // }
         }
         .select2-container{
             @extend .w-auto;
@@ -261,9 +261,9 @@
 .completed-listing{
     input[type="text"]{
         @extend .min-width-100;
-            &:focus{
-                outline: auto !important;
-            }
+            // &:focus{
+            //     outline: auto !important;
+            // }
     }
 }
 .select2-dropdown.select2-dropdown--above{
