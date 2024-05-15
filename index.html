@@ -3747,6 +3747,7 @@
                             </div>
                         </div>
                         <!-- bulk entity name end-->
+                        
                         <div class="mb-3">
                             <div class="col">
                                 <label for="" class="form-label">FORMATION TYPE</label>
@@ -3759,7 +3760,18 @@
                         </div>
                         <div class="mb-3">
                             <label class="" content="Home Entity" for="home_entity">Home Entity</label>
-                            <select name="home_entity" id="home_entity"
+                            <div class="w-100 form-select2">
+                                <select
+                                    class="js-example-basic-single1 w-100 form-select"
+                                    name="state">
+                                    <option value="">Select Home Entity</option>
+                                    <option value="1">BE Entity LLC (CA)</option>
+                                    <option value="2">Entity with Group LLC (CA)</option>
+                                    <option value="3">Entity without Group LLC (CA)</option>
+                                    <option value="4">ABC Hotels INC (FL)</option>
+                                </select>
+                            </div>
+                            <!-- <select name="home_entity" id="home_entity"
                                 class="home-entity-field form-control form-select rounded"
                                 data-target-element="home_entity" data-state="#entity_state"
                                 data-placeholder="Select Home Entity"
@@ -3770,7 +3782,7 @@
                                 <option value="2">Entity with Group LLC (CA)</option>
                                 <option value="3">Entity without Group LLC (CA)</option>
                                 <option value="4">ABC Hotels INC (FL)</option>
-                            </select><small class="form-text text-blue w-100"></small>
+                            </select><small class="form-text text-blue w-100"></small> -->
                         </div>
                         <div class="mb-3">
                             <div>
@@ -4278,6 +4290,12 @@
         $(document).ready(function () {
             $('.js-example-basic-single').select2();
         });
+    </script>
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+            $('.js-example-basic-single1').select2({
+                dropdownParent: $('#updateEntityDetails')
+            });
     </script>
     <!-- select2 init end-->
     <script type="text/javascript">
