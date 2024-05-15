@@ -273,7 +273,7 @@
     .select2.select2-container{
         @extend .w-100,.shadow-lg,.rounded-2;
         .select2-selection.select2-selection--single{
-            @extend .border-0,.d-flex,.align-items-center,.px-2;
+            @extend .border-0,.d-flex,.align-items-center,.px-2,.rounded-2;
             min-height: 56px;
             .select2-selection__rendered{
                 height: 56px;
@@ -281,7 +281,7 @@
             }
             .select2-selection__arrow{
                 min-height: 56px;
-                @extend .me-3;
+                @extend .me-3,.top-0;
                 b{
                     border-width: 8px 8px 0 8px;
                     border-color: #000 transparent transparent transparent;
