@@ -4393,19 +4393,24 @@
                         }
                     },
 
-                    dontShowAgain: {
-                        text: '<div class="d-flex align-items-center"><input class="form-check-input me-3" type="checkbox" id="dont-show-again"><label class="text-capitalize fs-6 mb-0" for="dont-show-again">Don\'t show again</label></div>',
-                        btnClass: 'btn',
-                        action: function () {
-                            $('#dont-show-again').prop('checked', function (i, val) {
-                                return !val;
-                            });
-                            return false;
-                        }
-                    }
+                    // dontShowAgain: {
+                    //     text: '<div class="d-flex align-items-center position-relative"><input class="form-check-input me-3" type="checkbox" id="dont-show-again"><label class="text-capitalize fs-6 mb-0" for="dont-show-again">Don\'t show again</label></div>',
+                    //     btnClass: 'btn',
+                    //     action: function () {
+                    //         $('#dont-show-again').prop('checked', function (i, val) {
+                    //             return !val;
+                    //         });
+                    //         return false;
+                    //     }
+                    // }
 
                 },
-
+                onContentReady: function () {
+                    // Create the checkbox inside a button
+                    var checkboxButton = $('<button type="button" class="btn p-0 outline-0 border-0 w-100"><div class="d-flex align-items-center justify-content-center mt-3 position-relative"><input class="form-check-input me-3" type="checkbox" id="dont-show-again"><label class="text-capitalize fs-6 mb-0" for="dont-show-again">Don\'t show again</label></div></button>');
+                    // Append the checkbox button after the .jconfirm-buttons element
+                    checkboxButton.insertAfter('.jconfirm-buttons');
+                }
             })
 
         })
