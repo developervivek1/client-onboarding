@@ -53,7 +53,30 @@
   overflow: hidden;
 }
 
-
+.icon-reload-dark {
+  background-image: url("../../../dist/images/icons/icon-reload-dark.svg");
+  &:hover {
+    background-image: url("../../../dist/images/icons/icon-waiting-blue.svg");
+  }
+}
+.icon-tick-dark {
+  background-image: url("../../../dist/images/icons/dark-tick.svg");
+}
+.enable-tick-hover:hover {
+  background-image: url("../../../dist/images/icons/green-tick.svg");
+}
+.icon-probhited-dark {
+  background-image: url("../../../dist/images/icons/icon-probhited-dark.svg");
+}
+.icon-probhited-hover:hover {
+  background-image: url("../../../dist/images/icons/icon-inactive-red.svg");
+}
+.icon-google {
+  background-image: url("../../../dist/images/icons/icons8-google.svg");
+}
+.icon-microsoft {
+  background-image: url("../../../dist/images/icons/icons8-microsoft.svg");
+}
 .icon-delete {
   background-image: url("../../../dist/images/icons/delete-dark.svg");
 
