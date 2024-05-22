@@ -205,6 +205,13 @@
                 }
                 .select2-selection__rendered{
                     @extend .ps-0,.pe-0;
+                    &[title="Entity Type*"]{
+                        @extend .text-danger;
+                    }
+                    &[title="Select State*"]{
+                        @extend .text-danger;
+                    }
+
                 }
                 .select2-selection__arrow{
                     @extend .d-none;
