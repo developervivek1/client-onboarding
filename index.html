@@ -229,10 +229,15 @@
                                         </div>
                                         <div class="col-lg-2">
                                             <button type="button"
-                                                class="h-100 deleted-entity btn btn-light border-dark px-4 py-3 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center">Out
+                                                class="h-100 deleted-entity btn btn-light border-dark px-4 py-3 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center" id="outOfScopeBtn">Out
                                                 of Scope
                                                 <span
                                                     class="icon icon-out-of-scope-dark me-0 ms-3 col-1"></span></button>
+                                            <button type="button"
+                                                    class="h-100 deleted-entity btn btn-light border-dark px-4 py-3 text-capitalize w-100 btn-lg d-flex align-items-center justify-content-center d-none" id="inScopeBtn">
+                                                    In Scope
+                                                    <span
+                                                        class="icon icon-out-of-scope-dark me-0 ms-3 col-1"></span></button>        
                                         </div>
                                         <div class="col-lg-2">
                                             <button type="button"
@@ -4586,23 +4591,22 @@
 
     <!-- Review Entity Details modal buttons(scope/not in scope) show and hide footer button -->
     <script>
-        const outOfScopeBtn = document.getElementById('outOfScopeBtn');
-        const inScopeBtn = document.getElementById('inScopeBtn');
+        const outOfScopeBtns = document.querySelectorAll('#outOfScopeBtn');
+        const inScopeBtns = document.querySelectorAll('#inScopeBtn');
 
         document.querySelectorAll('.nav-link').forEach(button => {
             button.addEventListener('click', () => {
-                outOfScopeBtn.classList.add('d-none');
-                inScopeBtn.classList.add('d-none');
+                outOfScopeBtns.forEach(btn => btn.classList.add('d-none'));
+                inScopeBtns.forEach(btn => btn.classList.add('d-none'));
 
-                if (button.id === 'pending-review-tab') {
-                    outOfScopeBtn.classList.remove('d-none');
+                if (button.id === 'pending-review-tab' || button.id === 'completed-tab') {
+                    outOfScopeBtns.forEach(btn => btn.classList.remove('d-none'));
                 } else if (button.id === 'out-of-scope-tab') {
-                    inScopeBtn.classList.remove('d-none');
-                } else if (button.id === 'completed-tab') {
-                    outOfScopeBtn.classList.remove('d-none');
+                    inScopeBtns.forEach(btn => btn.classList.remove('d-none'));
                 }
             });
         });
+
     </script>
     <!-- end -->
     <script>
