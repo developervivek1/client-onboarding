@@ -211,6 +211,9 @@
                     &[title="Entity State*"]{
                         @extend .text-danger;
                     }
+                    &[title="Entity Status*"]{
+                        @extend .text-danger;
+                    }
 
                 }
                 .select2-selection__arrow{
